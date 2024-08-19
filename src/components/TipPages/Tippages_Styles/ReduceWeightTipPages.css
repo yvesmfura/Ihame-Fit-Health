@@ -1,0 +1,183 @@
+/* ReduceWeightTipPages.css */
+
+.rw-tip-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.rw-page-title {
+  font-size: 2.2rem;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.rw-description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.rw-section-select {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.rw-section-select button {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.rw-section-select button:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-3px);
+}
+
+.rw-section-select button.rw-active {
+  background-color: #63b3ed;
+  transform: scale(1.1);
+}
+
+.rw-tip-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.rw-section-title {
+  font-size: 1.8rem;
+  color: #2c5282;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.rw-tip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rw-tip-list li {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.rw-tip-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #3182ce;
+  font-weight: bold;
+}
+
+.rw-video-links {
+  margin-top: 1.5rem;
+}
+
+.rw-video-links h4 {
+  font-size: 1.4rem;
+  color: #2c5282;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.rw-video-list {
+  display: flex;
+  justify-content: center;
+}
+
+.rw-video-link {
+  display: inline-block;
+  background-color: #3182ce;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rw-video-link:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-3px);
+}
+
+.rw-workout-plan-link {
+  display: block;
+  text-align: center;
+  background-color: #68d391;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 2rem auto 0;
+  max-width: 250px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.rw-workout-plan-link:hover {
+  background-color: #48bb78;
+  transform: translateY(-3px);
+}
+
+.rw-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.rw-modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 720px; 
+  height: 480px;
+}
+
+.rw-modal iframe {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 12px;
+}
+
+
+.rw-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #3182ce;
+  cursor: pointer;
+}

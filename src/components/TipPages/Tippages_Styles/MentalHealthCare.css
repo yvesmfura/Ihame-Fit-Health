@@ -1,0 +1,271 @@
+/* Container styling */
+.mhc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Categories list */
+.mhc-categories-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #4a90e2;
+}
+
+.mhc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Card styling */
+.mhc-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mhc-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mhc-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.mhc-card p {
+  font-size: 1rem;
+  color: #666;
+  flex-grow: 1;
+}
+
+/* Learn More button */
+.mhc-card button {
+  margin-top: 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.mhc-card button:hover {
+  background-color: #357ABD;
+}
+
+/* Category details */
+.mhc-category-details {
+  max-width: 700px;
+  margin: auto;
+  padding: 25px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.mhc-category-details h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #444;
+  text-align: center;
+}
+
+.mhc-category-details p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.mhc-category-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.mhc-category-details ul li {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  background-color: #fff;
+  color: #007bff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mhc-category-details ul li:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.mhc-category-details button {
+  display: block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.mhc-category-details button:hover {
+  background-color: #0056b3;
+}
+
+.mhc-category-details button:focus {
+  outline: none;
+}
+
+/*Disorder details */
+
+.mhc-disorder-details {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mhc-disorder-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mhc-disorder-details p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.mhc-disorder-details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.mhc-disorder-details button:hover {
+  background-color: #0056b3;
+}
+
+.mhc-disorder-details button:focus {
+  outline: none;
+}
+
+
+
+
+.mhc-category-details h2, .mhc-disorder-details h2 {
+  margin-top: 0;
+  color: #4a90e2;
+}
+
+.mhc-category-details p, .mhc-disorder-details p {
+  color: #666;
+}
+
+/* Back button */
+.mhc-category-details button, .mhc-disorder-details button {
+  margin-top: 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mhc-category-details button:hover, .mhc-disorder-details button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mhc-cards {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .mhc-container {
+    padding: 10px;
+  }
+
+  .mhc-card {
+    padding: 15px;
+  }
+
+  .mhc-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .mhc-card p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Unique class for the mental health section */
+.mental-health-awareness {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mental-health-awareness h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.mental-health-awareness p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.mental-health-awareness ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.mental-health-awareness li {
+  font-size: 16px;
+  color: #34495e;
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.mental-health-awareness li:last-child {
+  margin-bottom: 0;
+}

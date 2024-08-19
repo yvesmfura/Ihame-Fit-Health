@@ -1,0 +1,35 @@
+/* src/components/Workout.css */
+.workout-page {
+    padding: 20px;
+  }
+  
+  .workout-section {
+    margin-bottom: 20px;
+  }
+  
+  .workout-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .workout-section ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .workout-section ul li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }  

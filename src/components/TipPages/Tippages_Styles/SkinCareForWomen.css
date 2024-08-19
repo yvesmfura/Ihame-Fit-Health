@@ -1,0 +1,53 @@
+.skincare-women-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffe6f2;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+    color: #4a4a4a;
+  }
+  
+  .skincare-women-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d63384;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .skincare-women-intro {
+    font-size: 18px;
+    color: #6b6b6b;
+    margin-bottom: 20px;
+    line-height: 1.7;
+  }
+  
+  .skincare-women-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skincare-women-item {
+    font-size: 18px;
+    color: #5c5c5c;
+    background-color: #fff;
+    border-left: 5px solid #d63384;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .skincare-women-item strong {
+    font-weight: bold;
+    color: #d63384;
+  }
+  
+  .skincare-women-item:hover {
+    background-color: #fce4ec;
+    border-left-color: #f06292;
+  }  

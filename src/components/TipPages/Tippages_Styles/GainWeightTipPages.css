@@ -1,0 +1,99 @@
+.gain-weight-page {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 30px;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .gain-weight-page h2 {
+    color: #343a40;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+  }
+  
+  .gain-weight-page h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+  }
+  
+  .gain-weight-page h3 {
+    color: #007bff;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 600;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+  }
+  
+  .gain-weight-page p {
+    color: #495057;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+  
+  .quick-tips-list {
+    list-style-type: none;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding-left: 15px;
+  }
+  
+  .quick-tips-list li {
+    color: #495057;
+    font-size: 16px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .quick-tips-list li::before {
+    content: '✔';
+    color: #28a745;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .gain-weight-page p, .quick-tips-list li {
+    transition: color 0.3s;
+  }
+  
+  
+  
+  .gain-weight-page p:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .gain-weight-page {
+      padding: 20px;
+      margin: 15px;
+    }
+  
+    .gain-weight-page h2 {
+      font-size: 24px;
+    }
+  
+    .gain-weight-page h3 {
+      font-size: 20px;
+    }
+  
+    .gain-weight-page p, .quick-tips-list li {
+      font-size: 15px;
+    }
+  }
+  

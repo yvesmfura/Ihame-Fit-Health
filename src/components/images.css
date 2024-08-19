@@ -1,0 +1,22 @@
+.carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Fixed height for the images */
+  overflow: hidden; /* Hides any part of the image that overflows the container */
+  padding: 0 10px; /* Adds padding to the left and right of the slider */
+}
+
+.carousel-image {
+  height: 100%; /* Ensures image fills the height of the container */
+  width: auto; /* Allows width to adjust proportionally */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  margin: 0 19px; /* 38px total margin, 19px on each side for 1cm spacing */
+  border-radius: 10px; /* Optional: Rounds corners for a better look */
+}
+
+/* Remove arrows for continuous sliding */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}

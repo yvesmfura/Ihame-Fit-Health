@@ -1,0 +1,121 @@
+/* IdealWeightCalculator.css */
+
+.ideal-weight-calculator {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.ideal-weight-calculator__title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ideal-weight-calculator__description {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.ideal-weight-calculator__input-group {
+  margin-bottom: 15px;
+}
+
+.ideal-weight-calculator__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.ideal-weight-calculator__input, .ideal-weight-calculator__select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.ideal-weight-calculator__input:focus, .ideal-weight-calculator__select:focus {
+  border-color: #007bff;
+}
+
+.ideal-weight-calculator__button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ideal-weight-calculator__button:hover {
+  background-color: #218838;
+}
+
+.ideal-weight-calculator__error-message {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.ideal-weight-calculator__result {
+  margin-top: 25px;
+  text-align: center;
+  padding: 20px;
+  background-color: #e3f2fd; /* Light blue background for highlighting */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #007bff; /* Border to emphasize the result */
+}
+
+.ideal-weight-calculator__get-tips-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.ideal-weight-calculator__get-tips-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+  .ideal-weight-calculator {
+    padding: 15px;
+  }
+
+  .ideal-weight-calculator__title {
+    font-size: 1.5rem;
+  }
+
+  .ideal-weight-calculator__input, .ideal-weight-calculator__select, .ideal-weight-calculator__button {
+    font-size: 0.9rem;
+  }
+
+  .ideal-weight-calculator__result {
+    font-size: 1rem;
+  }
+}
