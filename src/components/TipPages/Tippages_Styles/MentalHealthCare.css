@@ -59,7 +59,7 @@
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  align-self: center;
+  align-self: center; /* Centers the button horizontally within the flex container */
   transition: background-color 0.3s ease;
 }
 
@@ -136,8 +136,7 @@
   outline: none;
 }
 
-/*Disorder details */
-
+/* Disorder details */
 .mhc-disorder-details {
   max-width: 600px;
   margin: auto;
@@ -146,7 +145,14 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: justify; /* Justifies text */
 }
+
+.mhc-disorder-details button {
+  display: block; /* Ensures the button is a block element for centering */
+  margin: 20px auto 0; /* Centers button horizontally and adds top margin */
+}
+
 
 .mhc-disorder-details h2 {
   font-size: 24px;
@@ -160,17 +166,7 @@
   color: #666;
 }
 
-.mhc-disorder-details button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
+/* Button hover and focus states */
 .mhc-disorder-details button:hover {
   background-color: #0056b3;
 }
@@ -179,9 +175,7 @@
   outline: none;
 }
 
-
-
-
+/* Common styles for headings and paragraphs */
 .mhc-category-details h2, .mhc-disorder-details h2 {
   margin-top: 0;
   color: #4a90e2;
@@ -200,8 +194,8 @@
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+  align-self: center; /* Center the button horizontally */
   transition: background-color 0.3s ease;
-  align-self: center;
 }
 
 .mhc-category-details button:hover, .mhc-disorder-details button:hover {
