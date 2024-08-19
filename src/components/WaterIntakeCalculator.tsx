@@ -42,7 +42,7 @@ const WaterIntakeCalculator: React.FC = () => {
         Water is essential for maintaining proper hydration, regulating body temperature, and supporting various bodily functions. The recommended daily water intake varies depending on factors such as age, weight, and activity level.
       </p> 
       <div className="water-calculator__input-group">
-        <label htmlFor="weight" className="water-calculator__label">Weight kg:</label>
+        <label htmlFor="weight" className="water-calculator__label">Weight in kg:</label>
         <input 
           type="number" 
           id="weight"
