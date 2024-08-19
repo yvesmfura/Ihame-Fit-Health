@@ -29,7 +29,7 @@ const Workout: React.FC = () => {
         </ul>
       </div>
 
-      <Link to="/tips/reduce-weight" className="back-link">Back to Reduce Weight</Link>
+      <Link to="/get-tips" className="back-link">Back to Tips</Link>
     </div>
   );
 };

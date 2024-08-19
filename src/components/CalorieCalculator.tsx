@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './Component_Styles/BMIcalculator.css';
+import './Component_Styles/CalorieCalculator.css';
 
 const CalorieCalculator: React.FC = () => {
   const [age, setAge] = useState('');

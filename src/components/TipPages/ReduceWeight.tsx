@@ -85,7 +85,7 @@ const ReduceWeight: React.FC = () => {
         </div>
       </div>
 
-      <Link to="/Workout/workout-plan" className="rw-workout-plan-link">
+      <Link to="/Workout" className="rw-workout-plan-link">
         Get Workout Plan
       </Link>
     </div>
