@@ -59,7 +59,7 @@
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  align-self: flex-end;
+  align-self: center;
   transition: background-color 0.3s ease;
 }
 
@@ -201,6 +201,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-self: center;
 }
 
 .mhc-category-details button:hover, .mhc-disorder-details button:hover {
