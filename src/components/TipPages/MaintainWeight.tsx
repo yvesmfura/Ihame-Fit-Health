@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Tippages_Styles/MaintainWeightTipPages.css';
+import { Link } from 'react-router-dom';
 
 const MaintainWeight: React.FC = () => {
   const [modalVideoSrc, setModalVideoSrc] = useState<string | null>(null);
@@ -41,6 +42,10 @@ const MaintainWeight: React.FC = () => {
             >
               Healthy Mentaining Weight Tips Video
             </a>
+
+            <Link to="/Workout" className="rw-workout-plan-link">
+              Get Workout Plan
+            </Link>
           
         </ul>
       </div>

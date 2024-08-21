@@ -31,6 +31,30 @@ const GainWeight: React.FC = () => {
 
       <h3>The Bottom Line</h3>
       <p>Making dietary changes, focusing on high-calorie, nutrient-dense foods, and maintaining a healthy lifestyle can help you gain weight safely. Consider consulting a nutritionist or dietitian for personalized advice.</p>
+
+      <h3>Watch This Video for More Tips</h3>
+      <div className="gain-weight-video">
+        <h3 className="video-title">How to gain weight naturally</h3>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/sGVf3w1ow6Q"  
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowFullScreen>
+        </iframe>
+        <h3 className="video-title">Healthy food for gaining weight</h3>
+        <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/WwASmxrIEiI" 
+          title="YouTube video player" 
+          frameBorder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowFullScreen>
+        </iframe>
+      </div>
     </div>
   );
 };
