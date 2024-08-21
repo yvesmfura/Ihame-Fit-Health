@@ -2,21 +2,96 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Fixed height for the images */
-  overflow: hidden; /* Hides any part of the image that overflows the container */
-  padding: 0 10px; /* Adds padding to the left and right of the slider */
+  height: 200px; /* Default height */
+  overflow: hidden;
+  padding: 0 10px; /* Padding around the images */
+  transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .carousel-image {
-  height: 100%; /* Ensures image fills the height of the container */
-  width: auto; /* Allows width to adjust proportionally */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-  margin: 0 19px; /* 38px total margin, 19px on each side for 1cm spacing */
-  border-radius: 10px; /* Optional: Rounds corners for a better look */
+  height: 100%;
+  width: auto;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  margin: 0 10px; /* Space between images */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Remove arrows for continuous sliding */
+.carousel-image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
 .slick-prev,
 .slick-next {
-  display: none !important;
+  display: none !important; /* Hide navigation arrows for continuous sliding */
+}
+
+/* Custom dot styles */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #ccc; /* Default dot color */
+  opacity: 1;
+  transition: color 0.3s ease;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff5e57; /* Active dot color */
+}
+
+/* Responsive adjustments */
+
+/* Small devices (e.g., iPhone SE) */
+@media (max-width: 375px) {
+  .carousel-slide {
+    height: 120px; /* Reduce height for smaller screens */
+    padding: 0 5px; /* Reduce padding */
+  }
+
+  .carousel-image {
+    margin: 0 5px; /* Less margin for more compact display */
+    border-radius: 8px; /* Slightly smaller border-radius */
+  }
+}
+
+/* Medium devices (e.g., iPhone XR, Pixel 7, Samsung Galaxy S8+) */
+@media (min-width: 376px) and (max-width: 768px) {
+  .carousel-slide {
+    height: 150px; /* Adjust height for medium devices */
+  }
+
+  .carousel-image {
+    margin: 0 8px; /* Slightly more space between images */
+    border-radius: 10px; /* Medium border-radius */
+  }
+}
+
+/* Large devices (e.g., iPhone 14 Pro Max, iPad Mini, Surface Pro) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .carousel-slide {
+    height: 180px; /* Adjust height for larger screens */
+    padding: 0 8px; /* Maintain padding */
+  }
+
+  .carousel-image {
+    margin: 0 10px; /* Default margin */
+    border-radius: 12px; /* Larger border-radius for bigger screens */
+  }
+}
+
+/* Extra-large devices (e.g., iPad Pro, Galaxy Z Fold) */
+@media (min-width: 1025px) {
+  .carousel-slide {
+    height: 200px; /* Default height for extra-large devices */
+  }
+
+  .carousel-image {
+    margin: 0 10px; /* Maintain margin */
+    border-radius: 12px; /* Maintain border-radius */
+  }
 }

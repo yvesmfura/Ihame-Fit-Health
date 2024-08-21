@@ -87,6 +87,7 @@ const App: React.FC = () => {
 
 const Home: React.FC = () => (
   <>
+   <div className="chevron-banner"></div>
     <section className="carousel-section">
       <ImageCarousel />
     </section>
