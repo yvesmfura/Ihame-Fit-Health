@@ -2,96 +2,90 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200px; /* Default height */
+  height: 200px;
   overflow: hidden;
-  padding: 0 10px; /* Padding around the images */
-  transition: transform 0.3s ease; /* Smooth transition */
+  padding: 0 10px;
+  transition: transform 0.3s ease;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
 }
 
 .carousel-image {
   height: 100%;
   width: auto;
-  object-fit: cover; /* Ensure the image covers the container without distortion */
-  margin: 0 10px; /* Space between images */
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  object-fit: cover;
+  margin: 0 10px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .carousel-image:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
 .slick-prev,
 .slick-next {
-  display: none !important; /* Hide navigation arrows for continuous sliding */
+  display: none !important;
 }
 
-/* Custom dot styles */
 .slick-dots {
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .slick-dots li button:before {
-  font-size: 10px;
-  color: #ccc; /* Default dot color */
+  font-size: 12px;
+  color: #bbb;
   opacity: 1;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #ff5e57; /* Active dot color */
+  color: #ff6b6b;
 }
 
-/* Responsive adjustments */
-
-/* Small devices (e.g., iPhone SE) */
 @media (max-width: 375px) {
   .carousel-slide {
-    height: 120px; /* Reduce height for smaller screens */
-    padding: 0 5px; /* Reduce padding */
+    height: 130px;
+    padding: 0 5px;
   }
 
   .carousel-image {
-    margin: 0 5px; /* Less margin for more compact display */
-    border-radius: 8px; /* Slightly smaller border-radius */
+    margin: 0 5px;
+    border-radius: 10px;
   }
 }
 
-/* Medium devices (e.g., iPhone XR, Pixel 7, Samsung Galaxy S8+) */
 @media (min-width: 376px) and (max-width: 768px) {
   .carousel-slide {
-    height: 150px; /* Adjust height for medium devices */
+    height: 160px;
   }
 
   .carousel-image {
-    margin: 0 8px; /* Slightly more space between images */
-    border-radius: 10px; /* Medium border-radius */
+    margin: 0 8px;
+    border-radius: 12px;
   }
 }
 
-/* Large devices (e.g., iPhone 14 Pro Max, iPad Mini, Surface Pro) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .carousel-slide {
-    height: 180px; /* Adjust height for larger screens */
-    padding: 0 8px; /* Maintain padding */
+    height: 180px;
+    padding: 0 8px;
   }
 
   .carousel-image {
-    margin: 0 10px; /* Default margin */
-    border-radius: 12px; /* Larger border-radius for bigger screens */
+    margin: 0 10px;
+    border-radius: 14px;
   }
 }
 
-/* Extra-large devices (e.g., iPad Pro, Galaxy Z Fold) */
 @media (min-width: 1025px) {
   .carousel-slide {
-    height: 200px; /* Default height for extra-large devices */
+    height: 200px;
   }
 
   .carousel-image {
-    margin: 0 10px; /* Maintain margin */
-    border-radius: 12px; /* Maintain border-radius */
+    margin: 0 10px;
+    border-radius: 15px;
   }
 }

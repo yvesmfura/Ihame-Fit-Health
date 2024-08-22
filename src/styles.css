@@ -91,7 +91,9 @@ nav ul li a:hover {
   margin-bottom: 5px;
 }
 
-
+.carousel-section {
+  margin-top: -25px;
+}
 
 /* Hero Section */
 .hero {
