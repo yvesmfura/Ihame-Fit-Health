@@ -94,11 +94,10 @@ const Home: React.FC = () => (
     <section className="hero">
       <div className="hero-text">
         <h2>Get Fit, Stay Healthy</h2>
-        <p>Your journey to a healthier life starts here. click on Join us</p>
+        <p className="call-to-action">Your journey to a healthier life starts here. <span>Click on Join Us</span></p>
         <Link to="/get-tips" className="btn">Join Us</Link>
       </div>
     </section>
-
     <section className="features">
       <h2>Our Features</h2>
       <div className="feature-cards">

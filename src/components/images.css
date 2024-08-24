@@ -1,3 +1,4 @@
+/* Carousel slide styling with animation */
 .carousel-slide {
   display: flex;
   justify-content: center;
@@ -5,10 +6,13 @@
   height: 200px;
   overflow: hidden;
   padding: 0 10px;
-  transition: transform 0.3s ease;
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideInFade 0.6s ease-in-out forwards;
 }
 
+/* Image styling with hover animation */
 .carousel-image {
   height: 100%;
   width: auto;
@@ -24,26 +28,19 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
 
-.slick-prev,
-.slick-next {
-  display: none !important;
+/* Slide-in and fade-in animation */
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.slick-dots {
-  bottom: 15px;
-}
-
-.slick-dots li button:before {
-  font-size: 12px;
-  color: #bbb;
-  opacity: 1;
-  transition: color 0.4s ease;
-}
-
-.slick-dots li.slick-active button:before {
-  color: #ff6b6b;
-}
-
+/* Responsive adjustments */
 @media (max-width: 375px) {
   .carousel-slide {
     height: 130px;
