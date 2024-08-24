@@ -86,7 +86,7 @@ const CalorieCalculator: React.FC = () => {
 
   return (
     <div className="calorie-calculator">
-      <h2 className="calorie-calculator__title">Calorie Calculator</h2>
+      <h2 className="calorie-calculator__title">Calorie Intake Calculator</h2>
       <p className="calorie-calculator__description">
         Understanding your daily caloric needs is essential for achieving your health and fitness goals.
       </p>

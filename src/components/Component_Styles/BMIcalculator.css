@@ -1,7 +1,7 @@
 /* BMIcalculator.css */
 
 .bmi-calculator-container {
-  max-width: 400px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -17,13 +17,23 @@
   margin-bottom: 10px;
 }
 
-.bmi-calculator__description {
-  font-size: 1rem;
-  color: #666;
+
+
+.bmi-descriptions {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333333;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 4px solid #4CAF50;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 20px auto;
   text-align: justify;
-  margin-bottom: 20px;
-  line-height: 1.5;
 }
+
 
 .bmi-calculator__input {
   width: calc(100% - 20px);

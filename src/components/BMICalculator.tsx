@@ -53,6 +53,9 @@ const BMICalculator: React.FC = () => {
   return (
     <div className="bmi-calculator-container">
       <h2 className="bmi-calculator__title">BMI Calculator</h2>
+      <p className="bmi-descriptions">
+        BMI calculation, or Body Mass Index, is a simple method used to assess an individual's weight relative to their height, providing a numerical value that helps categorize health risks. A BMI below 18.5 indicates underweight, suggesting potential health concerns, while a BMI between 18.5 and 24.9 is considered normal, reflecting a healthy weight range. A BMI between 25 and 29.9 signals overweight, with increased risk for conditions like heart disease and diabetes, and a BMI of 30 or above classifies as obese, indicating a significantly higher risk of serious health problems. Although useful, BMI should be considered alongside other health assessments as it may not account for factors like muscle mass.
+      </p>
       <form
         onSubmit={(e) => {
           e.preventDefault();

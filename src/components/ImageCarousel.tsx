@@ -53,13 +53,13 @@ const ImageCarousel: React.FC = () => {
       {
         breakpoint: 1024, // Small laptops and large tablets
         settings: {
-          slidesToShow: 3.1
+          slidesToShow: 3.2
         },
       },
       {
         breakpoint: 768, // Tablets
         settings: {
-          slidesToShow: 2.7,
+          slidesToShow: 2.8
         },
       },
       {
@@ -71,15 +71,16 @@ const ImageCarousel: React.FC = () => {
       {
         breakpoint: 480, // Small smartphones
         settings: {
-          slidesToShow: 1.5,
+          slidesToShow: 1.55,
         },
       },
       {
         breakpoint: 375, // Very small devices (e.g., iPhone SE)
         settings: {
-          slidesToShow: 1.3,
+          slidesToShow: 1.39,
         },
       },
+
     ],
   };
 

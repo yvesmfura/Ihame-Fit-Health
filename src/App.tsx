@@ -45,7 +45,7 @@ const App: React.FC = () => {
               <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
               <li><Link to="/calorie-calculator">Calorie Calculator</Link></li>
               <li><Link to="/protein-calculator">Protein Calculator</Link></li>
-              <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
+              <li><Link to="/water-intake-calculator">Water Calculator</Link></li>
               <li><Link to="/get-tips">Get Tips</Link></li>
             </ul>
           </nav>

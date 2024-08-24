@@ -37,7 +37,7 @@ const ProteinCalculator: React.FC = () => {
 
   return (
     <div className="protein-calculator">
-      <h2 className="protein-calculator__title">Protein Calculator</h2>
+      <h2 className="protein-calculator__title">Protein Intake Calculator</h2>
       <p className="protein-calculator__description">
         Protein is an essential nutrient for building and repairing tissues in the body. It is also important for muscle growth and maintenance. The recommended daily protein intake varies depending on factors such as age, weight,
         and activity level.
