@@ -37,7 +37,7 @@ const App: React.FC = () => {
     <ScrollToTop />
       <div className="app">
         <header className="header">
-          <h1>Ihame Health Focus</h1>
+          <h1>Ihame Fit Health</h1>
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -94,7 +94,7 @@ const Home: React.FC = () => (
     <section className="hero">
       <div className="hero-text">
         <h2>Get Fit, Stay Healthy</h2>
-        <p>Your journey to a healthier life starts here.</p>
+        <p>Your journey to a healthier life starts here. click on Join us</p>
         <Link to="/get-tips" className="btn">Join Us</Link>
       </div>
     </section>
