@@ -1,105 +1,259 @@
-.maintain-weight-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Video link styles */
-.maintain-weight-video-links {
-  margin-top: 1.5rem;
+/* General Page Styles */
+.maintain-weight-tip-page {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  line-height: 1.7;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInPage 1.5s ease-in-out;
 }
 
-.maintain-weight-video-links h4 {
-  font-size: 1.4rem;
-  color: #2c5282;
-  margin-bottom: 0.5rem;
+.maintain-weight-title {
+  font-size: 2.8rem;
+  color: #1abc9c;
   text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: dropIn 1.2s ease-in-out;
+}
+
+.maintain-weight-description, .maintain-weight-statistics {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Facts List */
+.maintain-weight-facts-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.maintain-weight-facts-list li {
+  background: #ecf0f1;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-left: 5px solid #1abc9c;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.maintain-weight-facts-list li:hover {
+  transform: translateY(-5px);
+  background: #dff9fb;
+}
+
+.maintain-weight-facts-list li strong {
+  color: #1abc9c;
+}
+
+/* Strategies List */
+.maintain-weight-strategies-list {
+  list-style: none;
+  padding: 0;
+}
+
+.maintain-weight-strategies-list li {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-left: 5px solid #e74c3c;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.maintain-weight-strategies-list li:hover {
+  transform: translateY(-5px);
+  background: #f9ebea;
+}
+
+.maintain-weight-strategies-list li strong {
+  color: #e74c3c;
+}
+
+/* Video Section */
+.maintain-weight-video-section {
+  margin-top: 40px;
+}
+
+.maintain-weight-video-title {
+  font-size: 1.8rem;
+  color: #3498db;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .maintain-weight-video-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  list-style: none;
   padding: 0;
-  margin: 0;
+  text-align: center;
 }
 
-.maintain-weight-video-list .maintain-weight-video-link {
+.maintain-weight-video-link {
   display: inline-block;
-  background-color: #28a745;
-  color: #ffffff;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.75rem 1.2rem;
-  border-radius: 20px;
+  background: #3498db;
+  color: #fff;
+  padding: 12px 25px;
+  margin-bottom: 12px;
+  border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-  border: 2px solid #28a745;
-  margin: 0.75rem 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.maintain-weight-video-list .maintain-weight-video-link:hover {
-  background-color: #218838;
-  border-color: #1e7e34;
-  transform: translateY(-3px);
+.maintain-weight-video-link:hover {
+  background: #5dade2;
+  transform: translateY(-5px);
 }
 
-.maintain-weight-video-list .maintain-weight-video-link:active {
-  background-color: #1e7e34;
-  border-color: #1b5e20;
+.mw-workout-plan-link {
+  display: inline-block;
+  background: #2ecc71;
+  color: #fff;
+  padding: 12px 25px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-  
-  /* Modal styles */
-  .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000; /* Ensures the modal is on top */
+.mw-workout-plan-link:hover {
+  background: #58d68d;
+  transform: translateY(-5px);
+}
+
+/* Modal Styles */
+.maintain-weight-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.7s ease;
+}
+
+.maintain-weight-modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 90%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.5s ease;
+  position: relative;
+}
+
+.maintain-weight-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #e74c3c;
+  transition: color 0.3s ease;
+}
+
+.maintain-weight-modal-close:hover {
+  color: #c0392b;
+}
+
+/* Animations */
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
   }
-  
-  .modal-content {
-    background-color: white;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .maintain-weight-title {
+    font-size: 2.2rem;
+  }
+
+  .maintain-weight-description, .maintain-weight-statistics {
+    font-size: 1.1rem;
+  }
+
+  .maintain-weight-facts-list li, .maintain-weight-strategies-list li {
+    padding: 15px;
+  }
+
+  .maintain-weight-video-link, .mw-workout-plan-link {
+    width: 100%;
+    padding: 12px 0;
+   
+  }
+
+  .maintain-weight-modal-content {
     padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    max-width: 600px;
-    width: 100%;
   }
-  
-  .modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #333;
-    transition: color 0.3s;
+
+  .maintain-weight-modal-close {
+    font-size: 2rem;
   }
-  
-  .modal-close:hover {
-    color: #000;
-  }
-  
-  /* Tips list styles */
-  .tip-section ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .tip-section ul li {
-    margin-bottom: 10px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
+}
