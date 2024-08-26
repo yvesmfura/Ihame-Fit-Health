@@ -387,8 +387,23 @@ nav ul li a:hover {
   color: #ff3f31;
 }
 
+.get-tips-container {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Subtle gradient background */
+  border-radius: 12px; /* Rounded corners for the container */
+  max-width: 3000px;
+  margin: 0 auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
 /* Responsive Design for small devices like phones */
 @media (max-width: 768px) {
+
   .header h1 {
     font-size: 1.5rem;
   }
