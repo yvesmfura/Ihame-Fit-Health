@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 // Import components
@@ -129,6 +129,24 @@ import CoreAndPelvicExercisesWomen from './components/TipPages/BuildBodyForWomen
 import './styles.css';
 
 const App: React.FC = () => { 
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('.header');
+      if (window.scrollY > 50) {
+        header?.classList.add('header--shrink');
+      } else {
+        header?.classList.remove('header--shrink');
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+
   return (
     <BrowserRouter>
     <ScrollToTop />
@@ -140,8 +158,8 @@ const App: React.FC = () => {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/bmi-calculator">BMI Calculator</Link></li>
               <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
-              <li><Link to="/calorie-calculator">Calorie Calculator</Link></li>
-              <li><Link to="/protein-calculator">Protein Calculator</Link></li>
+              <li><Link to="/calorie-calculator">Calorie Intake Calculator</Link></li>
+              <li><Link to="/protein-calculator">Protein Intake  Calculator</Link></li>
               <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
               <li><Link to="/get-tips">Get Tips</Link></li>
             </ul>
