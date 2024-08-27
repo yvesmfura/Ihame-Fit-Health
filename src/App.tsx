@@ -167,7 +167,7 @@ const App: React.FC = () => {
     <ScrollToTop />
       <div className="app">
         <header className="header">
-          <h1>Ihame Fit Health</h1>
+          <h1>IhameFit Health</h1>
           <nav>
             <ul>
               <li><Link to="/">Home</Link></li>
