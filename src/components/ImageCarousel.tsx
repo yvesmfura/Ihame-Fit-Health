@@ -29,7 +29,7 @@ const ImageCarousel: React.FC = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 5000,
+    speed: 8000,
     slidesToShow: 5, // Default number of slides
     slidesToScroll: 1,
     autoplay: true,
