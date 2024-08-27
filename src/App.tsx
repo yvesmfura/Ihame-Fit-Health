@@ -133,18 +133,33 @@ const App: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('.header');
+      const navLinks = document.querySelector('.nav-links');
+      const isPhone = window.matchMedia('(max-width: 767px)').matches;
+  
       if (window.scrollY > 50) {
-        header?.classList.add('header--shrink');
+        if (isPhone) {
+          header?.classList.add('header--shrink-phone');
+          navLinks?.classList.add('nav-links--hide');
+        } else {
+          header?.classList.add('header--shrink');
+        }
       } else {
-        header?.classList.remove('header--shrink');
+        if (isPhone) {
+          header?.classList.remove('header--shrink-phone');
+          navLinks?.classList.remove('nav-links--hide');
+        } else {
+          header?.classList.remove('header--shrink');
+        }
       }
     };
   
     window.addEventListener('scroll', handleScroll);
+  
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
   
 
   return (
@@ -159,7 +174,7 @@ const App: React.FC = () => {
               <li><Link to="/bmi-calculator">BMI Calculator</Link></li>
               <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
               <li><Link to="/calorie-calculator">Calorie Intake Calculator</Link></li>
-              <li><Link to="/protein-calculator">Protein Intake  Calculator</Link></li>
+              <li><Link to="/protein-calculator">Protein Intake Calculator</Link></li>
               <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
               <li><Link to="/get-tips">Get Tips</Link></li>
             </ul>
