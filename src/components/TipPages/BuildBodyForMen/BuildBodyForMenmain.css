@@ -1,0 +1,159 @@
+/* BuildBodyForMenmain.css */
+
+/* Container styling */
+.buildbodymen-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+/* Page title styling */
+.buildbodymen-page-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ffffff; /* Dark slate blue */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-color: #2980b9; /* Strong blue for hover */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+
+/* Categories grid styling */
+.buildbodymen-categories-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Category card styling */
+.buildbodymen-category-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0 0 20px; /* Add padding to the bottom */
+}
+
+.buildbodymen-category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card image styling */
+.buildbodymen-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card title styling */
+.buildbodymen-card-title {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+    color: #111;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+/* Card description styling */
+.buildbodymen-card-description {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 20px 20px;
+    flex-grow: 1; /* Allow the description to grow and push the button down */
+}
+
+/* Explore button styling */
+.buildbodymen-explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+.buildbodymen-explore-button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+
+/* 768px and above - Tablet screens */
+@media (min-width: 768px) {
+    .buildbodymen-categories-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns on tablet screens */
+        gap: 30px;
+    }
+
+    .buildbodymen-card-image {
+        height: 180px;
+    }
+}
+
+/* 1024px and above - Small desktops */
+@media (min-width: 1024px) {
+    .buildbodymen-categories-grid {
+        grid-template-columns: 1fr 1fr 1fr; /* 3 columns on small desktops */
+        gap: 30px;
+    }
+
+    .buildbodymen-card-image {
+        height: 160px;
+    }
+}
+
+/* 1280px and above - Large desktops */
+@media (min-width: 1280px) {
+    .buildbodymen-container {
+        max-width: 1280px;
+    }
+
+    .buildbodymen-categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .buildbodymen-category-card {
+        border-radius: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+    }
+
+    .buildbodymen-category-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+    }
+
+    .buildbodymen-card-image {
+        height: 220px;
+    }
+
+    .buildbodymen-card-title {
+        font-size: 1.75rem;
+    }
+
+    .buildbodymen-card-description {
+        font-size: 1.125rem;
+    }
+
+    .buildbodymen-explore-button {
+        padding: 12px 25px;
+        font-size: 1.125rem;
+    }
+}

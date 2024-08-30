@@ -18,8 +18,8 @@ import Workout from './components/Workout';
 import ReduceWeight from './components/TipPages/ReduceWeight';
 import MaintainWeight from './components/TipPages/MaintainWeight';
 import GainWeight from './components/TipPages/GainWeight';
-//import BuildBodyForMen from './components/TipPages/BuildBodyForMen';
-//import BuildBodyForWomen from './components/TipPages/BuildBodyForWomen';
+import BuildBodyForMen from './components/TipPages/BuildBodyForMen/BuildBodyForMenmain';
+import BuildBodyForWomen from './components/TipPages/BuildBodyForWomen/BuildBodyForWomenmain';
 import SkinCareForMen from './components/TipPages/SkinCareForMen';
 import SkinCareForWomen from './components/TipPages/SkinCareForWomen';
 import DentalCare from './components/TipPages/DentalCare';
@@ -196,8 +196,8 @@ const App: React.FC = () => {
             <Route path="/tips/reduce-weight" element={<ReduceWeight />} />
             <Route path="/tips/maintain-weight" element={<MaintainWeight />} />
             <Route path="/tips/increase-weight" element={<GainWeight />} />
-            {/* <Route path="/tips/build-body-men" element={<BuildBodyForMen />} /> */}
-            {/* <Route path="/tips/build-body-women" element={<BuildBodyForWomen />} />*/}
+            <Route path="/tips/build-body-men" element={<BuildBodyForMen />} />
+            <Route path="/tips/build-body-women" element={<BuildBodyForWomen />} />
             <Route path="/tips/skin-care-men" element={<SkinCareForMen />} />
             <Route path="/tips/skin-care-women" element={<SkinCareForWomen />} />
             <Route path="/tips/dental-care" element={<DentalCare />} />
