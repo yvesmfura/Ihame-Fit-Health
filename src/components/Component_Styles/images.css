@@ -1,22 +1,47 @@
-.carousel-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px; /* Fixed height for the images */
-  overflow: hidden; /* Hides any part of the image that overflows the container */
-  padding: 0 10px; /* Adds padding to the left and right of the slider */
+.image-slider-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Control the max width for larger screens */
+  margin: 0 auto; /* Center the slider horizontally */
+  padding: 0;
+  overflow: hidden; /* Hide overflow for a cleaner look */
+  position: relative; /* Position context for any overlay elements */
+  border-radius: 10px; /* Rounded corners for a modern touch */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9; /* Light background color */
 }
 
-.carousel-image {
-  height: 100%; /* Ensures image fills the height of the container */
-  width: 250px; /* Fixed width to ensure uniform size for all images */
-  object-fit: cover; /* Ensures the image covers the container without distortion */
-  margin: 0 10px; /* Adjusted margin for consistent spacing */
-  border-radius: 10px; /* Optional: Rounds corners for a better look */
+
+.slick-slider {
+  position: relative;
+  overflow: hidden; /* Ensure no overflow */
 }
 
-/* Remove arrows for continuous sliding */
-.slick-prev,
-.slick-next {
-  display: none !important;
+.slick-slide {
+  padding: 0 2px; /* Tiny space between slides */
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  border-radius: 12px;
+}
+
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .slick-slide img {
+    aspect-ratio: 16 / 9; /* Adjusted to maintain 16:9 aspect ratio for different screen widths */
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slide img {
+    aspect-ratio: 16 / 9; /* Adjusted to maintain 16:9 aspect ratio for different screen widths */
+  }
 }

@@ -4,95 +4,81 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Component_Styles/images.css";
 
+// Dynamically import all images from the ImageCarousel directory
 const images = import.meta.glob('../assets/ImageCarousel/*.{jpeg,jpg,png,gif}');
 
 const shuffleImages = (arr: string[]): string[] => {
   return arr.sort(() => Math.random() - 0.5);
 };
 
-const ImageCarousel: React.FC = () => {
-  const [loadedImages, setLoadedImages] = useState<string[]>([]);
+const ImageSlider: React.FC = () => {
+  const [imageUrls, setImageUrls] = useState<string[]>([]);
 
   useEffect(() => {
     const loadImages = async () => {
-      const imageUrls = await Promise.all(
-        Object.values(images).map(async (image) => {
-          const mod = await image();
-          return (mod as { default: string }).default;
+      const imageModules = await Promise.all(
+        Object.values(images).map(async (importFn) => {
+          const module = await importFn();
+          return (module as { default: string }).default;
         })
       );
-      setLoadedImages(shuffleImages(imageUrls).slice(0, 20));
+      const shuffledImages = shuffleImages(imageModules);
+      setImageUrls(shuffledImages);
     };
+
     loadImages();
   }, []);
 
   const settings = {
-    dots: false,
+    dots: false, // Disable dots
     infinite: true,
-    speed: 8000,
-    slidesToShow: 5, // Default number of slides
+    speed: 500,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: "linear",
-    pauseOnHover: false,
+    autoplaySpeed: 3000,
     responsive: [
       {
-        breakpoint: 1440, // Large screens like desktops
+        breakpoint: 1024,
         settings: {
-          slidesToShow: 7,
-        },
-      },
-
-      {
-        breakpoint: 1280, // Laptops and large tablets
-        settings: {
-          slidesToShow: 5,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
       {
-        breakpoint: 1024, // Small laptops and large tablets
-        settings: {
-          slidesToShow: 3.2
-        },
-      },
-      {
-        breakpoint: 768, // Tablets
-        settings: {
-          slidesToShow: 2.8
-        },
-      },
-      {
-        breakpoint: 600, // Large smartphones
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
       {
-        breakpoint: 480, // Small smartphones
+        breakpoint: 480,
         settings: {
-          slidesToShow: 1.55,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
-      {
-        breakpoint: 375, // Very small devices (e.g., iPhone SE)
-        settings: {
-          slidesToShow: 1.39,
-        },
-      },
-
     ],
   };
 
   return (
-    <Slider {...settings}>
-      {loadedImages.map((image: string, index: number) => (
-        <div key={index} className="carousel-slide">
-          <img src={image} alt={`Slide ${index + 1}`} className="carousel-image" />
-        </div>
-      ))}
-    </Slider>
+    <div className="image-slider-wrapper">
+      <Slider {...settings}>
+        {imageUrls.map((url, index) => (
+          <div key={index} className="slick-slide">
+            <img src={url} alt={`Slide ${index}`} />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 };
 
-export default ImageCarousel;
+export default ImageSlider;
