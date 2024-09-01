@@ -1,5 +1,7 @@
-import React, { useEffect} from 'react';
+import React, { useEffect,useState} from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+import logo from './assets/logo.png';
 
 // Import components
 import BMICalculator from './components/BMICalculator';
@@ -130,6 +132,14 @@ import './styles.css';
 
 const App: React.FC = () => { 
 
+  // Define the state to control the navigation menu visibility
+  const [navActive, setNavActive] = useState(false);
+
+  // Define the toggleNav function
+  const toggleNav = () => {
+    setNavActive(!navActive);
+  }
+
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector('.header');
@@ -166,20 +176,26 @@ const App: React.FC = () => {
     <BrowserRouter>
     <ScrollToTop />
       <div className="app">
-        <header className="header">
+      <header className="header">
+        <div className="logo-container">
+          <img src={logo} alt="IhameFit Logo" className="logo" />
           <h1>IhameFit Health</h1>
-          <nav>
-            <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/bmi-calculator">BMI Calculator</Link></li>
-              <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
-              <li><Link to="/calorie-calculator">Calorie Intake Calculator</Link></li>
-              <li><Link to="/protein-calculator">Protein Intake Calculator</Link></li>
-              <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
-              <li><Link to="/get-tips">Get Tips</Link></li>
-            </ul>
-          </nav>
-        </header>
+          <div className="menu-icon" onClick={toggleNav}>
+            &#9776; {/* This is the hamburger icon */}
+          </div>
+        </div>
+        <nav className="nav-links">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/bmi-calculator">BMI Calculator</Link></li>
+            <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
+            <li><Link to="/calorie-calculator">Calorie Intake Calculator</Link></li>
+            <li><Link to="/protein-calculator">Protein Intake Calculator</Link></li>
+            <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
+            <li><Link to="/get-tips">Get Tips</Link></li>
+          </ul>
+        </nav>
+      </header>
 
         <main className="main-content">
         <Routes>

@@ -21,7 +21,7 @@
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .slick-slide img {
@@ -38,10 +38,14 @@
   .slick-slide img {
     aspect-ratio: 16 / 9; /* Adjusted to maintain 16:9 aspect ratio for different screen widths */
   }
+
+  .image-slider-wrapper {
+    margin-top: -50px; /* Remove top margin for smaller screens */
 }
 
 @media (max-width: 480px) {
   .slick-slide img {
     aspect-ratio: 16 / 9; /* Adjusted to maintain 16:9 aspect ratio for different screen widths */
   }
+}
 }
