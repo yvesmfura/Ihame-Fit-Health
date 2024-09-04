@@ -116,6 +116,10 @@ nav ul li {
   display: none;
 }
 
+.menu-nav-links {
+  display: none;
+}
+
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
@@ -467,15 +471,13 @@ body {
     text-align: center; /* Center the title horizontally */
   }
 
-    /* Adjusted logo size */
+  /* Adjusted logo size */
   .logo {
     height: 40px; /* Adjusted logo height */
     width: auto;
     margin-right: 15px;
   }
 
-
-  
   .header h1 {
     font-size: 1.8rem;
     font-family: 'Poppins', sans-serif;
@@ -495,6 +497,12 @@ body {
     cursor: pointer; /* Make it clickable */
     margin-right: 50px;
   }
+
+  .menu-nav-links {
+    display: block;
+  ;
+  }
+  
 
   /* Hide the navigation menu by default on small screens */
   nav ul {
@@ -516,32 +524,9 @@ body {
     display: flex;
   }
 
-  /* Header styles for small screens when shrunk */
-  .header--shrink-phone {
-    display: flex;
-    justify-content: space-between; /* Keep logo and menu icon on the same line */
-    align-items: center; /* Center items vertically */
-    padding: 0 0.5rem; /* Ensure padding is consistent */
-    background-color: #004494;
-    transition: padding 0.3s ease, background-color 0.3s ease;
-  }
+  
 
- 
-  .header--shrink-phone .title-container {
-    flex: 1;
-    text-align: center; /* Center the title horizontally */
-  }
-
-  .header--shrink-phone h1 {
-    font-size: 1.5rem;
-    margin: 0; /* Remove default margin */
-  }
-
-  .header--shrink-phone nav ul li a {
-    margin-bottom: 0.5rem;
-    font-size: 0.75rem; /* Adjust font size for better readability */
-  }
-
+  /* Hover effect for navigation links */
   nav ul li a:hover {
     background-color: #003366;
     padding: 0.5rem 0.75rem;
@@ -577,29 +562,29 @@ body {
   .container {
     width: 95%;
     max-width: 900px;
-    
+    margin-right: 20px; /* Add margin to the right */
   }
 
   .header h1 {
-    font-size: 1.75rem;
+    font-size: 1.9rem;
   }
 
   nav ul {
     flex-direction: row;
     align-items: center;
-    gap: 1.5rem;
+    gap: 0.3rem;
+    margin-right: 60px; /* Ensure the nav doesn't overflow */
   }
 
   nav ul li a {
     font-size: 0.88rem;
-    padding: 0.5rem 0.75rem;
     display: inline-block;
     text-align: center;
     transition: background-color 0.3s ease, padding 0.3s ease;
   }
 
   nav ul li a:hover {
-    background-color: #004494;
+    text-decoration: underline;
     padding: 0.5rem 0.75rem;
     margin: 0;
     height: 2.5rem;
@@ -656,7 +641,6 @@ body {
 
   .footer {
     padding: 5rem 0;
-  
   }
 
   .footer .social-links a {
@@ -669,7 +653,7 @@ body {
   }
 
   main {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .get-tips-container {
@@ -681,6 +665,4 @@ body {
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
-
- 
 }

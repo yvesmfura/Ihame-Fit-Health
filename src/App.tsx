@@ -131,7 +131,6 @@ import CoreAndPelvicExercisesWomen from './components/TipPages/BuildBodyForWomen
 import './styles.css';
 
 const App: React.FC = () => { 
-
   // Define the state to control the navigation menu visibility
   const [navActive, setNavActive] = useState(false);
 
@@ -142,23 +141,16 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const header = document.querySelector('.header');
       const navLinks = document.querySelector('.nav-links');
       const isPhone = window.matchMedia('(max-width: 767px)').matches;
   
       if (window.scrollY > 50) {
         if (isPhone) {
-          header?.classList.add('header--shrink-phone');
           navLinks?.classList.add('nav-links--hide');
-        } else {
-          header?.classList.add('header--shrink');
         }
       } else {
         if (isPhone) {
-          header?.classList.remove('header--shrink-phone');
           navLinks?.classList.remove('nav-links--hide');
-        } else {
-          header?.classList.remove('header--shrink');
         }
       }
     };
@@ -169,8 +161,6 @@ const App: React.FC = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
-  
 
   return (
     <BrowserRouter>
@@ -181,7 +171,7 @@ const App: React.FC = () => {
           <img src={logo} alt="IhameFit Logo" className="logo" />
           <h1>IhameFit Health</h1>
           <div className="menu-icon" onClick={toggleNav}>
-            &#9776; {/* This is the hamburger icon */}
+            &#9776;
           </div>
         </div>
         <nav className="nav-links">
@@ -196,7 +186,7 @@ const App: React.FC = () => {
           </ul>
         </nav>
       </header>
-
+      
         <main className="main-content">
         <Routes>
            {/* Main pages */}
