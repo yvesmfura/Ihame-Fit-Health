@@ -516,7 +516,8 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 40px;
+    margin-right: 20px;
   }
 
   .phone-nav ul li {
@@ -525,8 +526,9 @@ body {
 
   .phone-nav ul li a {
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: white;
+    font-weight: bold;
     padding: 0.25rem 0; /* Reduce padding to decrease spacing */
   }
 
