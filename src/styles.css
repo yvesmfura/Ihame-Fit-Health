@@ -40,6 +40,10 @@ header, nav, footer, main {
   margin-bottom: 1rem;
 }
 
+.phone-nav {
+  display: none;
+}
+
 
 /* Adjust for Fixed Header */
 main {
@@ -498,40 +502,37 @@ body {
     margin-right: 50px;
   }
 
-  .menu-nav-links {
-    display: block;
-  ;
-  }
-  
-
-  /* Hide the navigation menu by default on small screens */
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 0.5rem;
-    position: absolute;
-    top: 60px;
-    right: 0.5rem; /* Align with reduced header padding */
-    background-color: #2980b9;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 200px; /* Set a fixed width for the menu */
-    z-index: 1000; /* Ensure it stays on top */
+  /* Phone-Specific Navigation (Home, Calculators, Get Tips) */
+  .phone-nav {
+    display: block; /* Show phone-nav by default */
+    position: center; /* Place it in the flow of the page */
+    width: 100%; /* Full width on phones */
+    margin-top: -20px;
+    margin-bottom: -9px;
   }
 
-  /* Show the navigation menu when the 'active' class is added */
-  nav ul.active {
-    display: flex;
-  }
-
-  
-
-  /* Hover effect for navigation links */
-  nav ul li a:hover {
-    background-color: #003366;
-    padding: 0.5rem 0.75rem;
+  .phone-nav ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    height: 2.5rem;
+    text-align: center;
+    margin-left: 25px;
+  }
+
+  .phone-nav ul li {
+    margin: 1rem 0; /* Reduce the margin between list items */
+  }
+
+  .phone-nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.25rem 0; /* Reduce padding to decrease spacing */
+  }
+
+  /* Hide the original desktop navigation */
+  .nav-links {
+    display: none;
   }
 
   .hero h2 {

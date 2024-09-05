@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import ImageCarousel from './components/ImageCarousel';
 import ScrollToTop from './components/ScrollToTop';
 import Workout from './components/Workout';
+import Calculators from './components/calculators.tsx';
 
 
 // Import detailed tip pages
@@ -131,13 +132,12 @@ import CoreAndPelvicExercisesWomen from './components/TipPages/BuildBodyForWomen
 import './styles.css';
 
 const App: React.FC = () => { 
-  // Define the state to control the navigation menu visibility
-  const [navActive, setNavActive] = useState(false);
 
-  // Define the toggleNav function
-  const toggleNav = () => {
-    setNavActive(!navActive);
-  }
+  const [isNavOpen, setIsNavOpen] = useState(false);
+      const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+      };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -167,25 +167,35 @@ const App: React.FC = () => {
     <ScrollToTop />
       <div className="app">
       <header className="header">
-        <div className="logo-container">
-          <img src={logo} alt="IhameFit Logo" className="logo" />
-          <h1>IhameFit Health</h1>
-          <div className="menu-icon" onClick={toggleNav}>
-            &#9776;
+          <div className="logo-container">
+            <img src={logo} alt="IhameFit Logo" className="logo" />
+            <h1>IhameFit Health</h1>
+            <div className="menu-icon" onClick={toggleNav}>
+              &#9776;
+            </div>
           </div>
-        </div>
-        <nav className="nav-links">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/bmi-calculator">BMI Calculator</Link></li>
-            <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
-            <li><Link to="/calorie-calculator">Calorie Intake Calculator</Link></li>
-            <li><Link to="/protein-calculator">Protein Intake Calculator</Link></li>
-            <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
-            <li><Link to="/get-tips">Get Tips</Link></li>
-          </ul>
-        </nav>
-      </header>
+          {/* Desktop Navigation */}
+          <nav className="nav-links">
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/bmi-calculator">BMI Calculator</Link></li>
+              <li><Link to="/ideal-weight-calculator">Ideal Weight Calculator</Link></li>
+              <li><Link to="/calorie-calculator">Calorie Intake Calculator</Link></li>
+              <li><Link to="/protein-calculator">Protein Intake Calculator</Link></li>
+              <li><Link to="/water-intake-calculator">Water Intake Calculator</Link></li>
+              <li><Link to="/get-tips">Get Tips</Link></li>
+            </ul>
+          </nav>
+          {/* Phone-Specific Navigation */}
+          <nav className={`phone-nav ${isNavOpen ? "open" : ""}`}>
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/calculators">Calculators</Link></li>
+              <li><Link to="/get-tips">Get Tips</Link></li>
+            </ul>
+          </nav>
+        </header>
+
       
         <main className="main-content">
         <Routes>
@@ -197,6 +207,7 @@ const App: React.FC = () => {
             <Route path="/protein-calculator" element={<ProteinCalculator />} />
             <Route path="/water-intake-calculator" element={<WaterIntakeCalculator />} />
             <Route path="/get-tips" element={<Tips />} />
+            <Route path="/calculators" element={<Calculators />} />
 
             {/* Detailed tip pages */}
             <Route path="/tips/reduce-weight" element={<ReduceWeight />} />

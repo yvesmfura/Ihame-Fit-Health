@@ -94,6 +94,24 @@
 
 /* Responsive Design */
 
+
+@media (max-width: 720px) {
+    /* Page title styling */
+ .buildbodywomen-page-title {
+     font-size: 1.3rem;
+     margin-bottom: 40px;
+     color: #ffffff; /* Dark slate blue */
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     background-color: #ff69b4; /* Hot pink for hover */
+     padding: 10px 20px;
+     border-radius: 5px;
+     margin-top: -50px;
+ }
+ 
+ }
+
 /* 768px and above - Tablet screens */
 @media (min-width: 768px) {
     .buildbodywomen-categories-grid {
