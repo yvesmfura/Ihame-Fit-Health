@@ -1,7 +1,5 @@
-/* WaterCalculator.css */
-
 .water-calculator {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -10,6 +8,7 @@
   font-family: 'Arial', sans-serif;
 }
 
+/* Title Styling */
 .water-calculator__title {
   text-align: center;
   font-size: 1.8rem;
@@ -17,6 +16,7 @@
   margin-bottom: 10px;
 }
 
+/* Description Styling */
 .water-calculator__description {
   font-size: 1rem;
   color: #666;
@@ -25,10 +25,18 @@
   line-height: 1.5;
 }
 
+/* Input Group Styling */
 .water-calculator__input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Wrapper Styling */
+.water-calculator__input-wrapper {
   margin-bottom: 15px;
 }
 
+/* Label Styling */
 .water-calculator__label {
   display: block;
   margin-bottom: 5px;
@@ -36,7 +44,9 @@
   color: #333;
 }
 
-.water-calculator__input {
+/* Input and Select Styling */
+.water-calculator__input,
+.water-calculator__select {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
@@ -47,10 +57,13 @@
   transition: border-color 0.3s ease;
 }
 
-.water-calculator__input:focus {
+/* Focus Styling */
+.water-calculator__input:focus,
+.water-calculator__select:focus {
   border-color: #007bff;
 }
 
+/* Button Styling */
 .water-calculator__button {
   width: 100%;
   padding: 10px;
@@ -67,6 +80,7 @@
   background-color: #218838;
 }
 
+/* Error Message Styling */
 .water-calculator__error {
   color: red;
   font-size: 1rem;
@@ -74,30 +88,68 @@
   margin-top: 15px;
 }
 
+/* Result Styling */
 .water-calculator__result {
   margin-top: 25px;
   text-align: center;
   padding: 20px;
-  background-color: #e3f2fd; /* Light blue background for highlighting */
+  background-color: #e3f2fd;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #007bff; /* Border to emphasize the result */
+  border: 2px solid #007bff;
 }
 
+/* Media Queries */
+
+/* Small Devices (Mobile) */
 @media (max-width: 480px) {
   .water-calculator {
     padding: 15px;
+    max-width: 300px;
   }
 
   .water-calculator__title {
     font-size: 1.5rem;
   }
 
-  .water-calculator__input, .water-calculator__button {
+  .water-calculator__input,
+  .water-calculator__select,
+  .water-calculator__button {
     font-size: 0.9rem;
   }
 
   .water-calculator__result {
     font-size: 1rem;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .water-calculator {
+    margin-top: 40px;
+    max-width: 500px;
+  }
+}
+
+/* Large Tablets (768px width, 1024px height) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .water-calculator {
+    margin-top: 50px;
+    max-width: 600px;
+  }
+
+  /* Input and Description font sizes */
+  .water-calculator__description,
+  .water-calculator__input,
+  .water-calculator__select {
+    font-size: 2rem;
+  }
+}
+
+/* Specific case for 768px width, 1024px height */
+@media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  .water-calculator {
+    margin-top: 50px;
+    max-width: 600px;
   }
 }

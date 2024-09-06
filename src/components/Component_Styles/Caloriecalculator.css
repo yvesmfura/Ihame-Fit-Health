@@ -1,7 +1,5 @@
-/* CalorieCalculator.css */
-
 .calorie-calculator {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -10,6 +8,7 @@
   font-family: 'Arial', sans-serif;
 }
 
+/* Title Styling */
 .calorie-calculator__title {
   text-align: center;
   font-size: 1.8rem;
@@ -17,6 +16,7 @@
   margin-bottom: 10px;
 }
 
+/* Description Styling */
 .calorie-calculator__description {
   font-size: 1rem;
   color: #666;
@@ -25,15 +25,18 @@
   line-height: 1.5;
 }
 
+/* Input Group Styling */
 .calorie-calculator__input-group {
   display: flex;
   flex-direction: column;
 }
 
+/* Input Wrapper Styling */
 .calorie-calculator__input-wrapper {
   margin-bottom: 15px;
 }
 
+/* Label Styling */
 .calorie-calculator__label {
   display: block;
   margin-bottom: 5px;
@@ -41,7 +44,9 @@
   color: #333;
 }
 
-.calorie-calculator__input, .calorie-calculator__select {
+/* Input and Select Styling */
+.calorie-calculator__input,
+.calorie-calculator__select {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
@@ -52,10 +57,13 @@
   transition: border-color 0.3s ease;
 }
 
-.calorie-calculator__input:focus, .calorie-calculator__select:focus {
+/* Focus Styling */
+.calorie-calculator__input:focus,
+.calorie-calculator__select:focus {
   border-color: #007bff;
 }
 
+/* Button Styling */
 .calorie-calculator__button {
   width: 100%;
   padding: 10px;
@@ -72,6 +80,7 @@
   background-color: #218838;
 }
 
+/* Error Message Styling */
 .calorie-calculator__error {
   color: red;
   font-size: 1rem;
@@ -79,30 +88,68 @@
   margin-top: 15px;
 }
 
+/* Result Styling */
 .calorie-calculator__result {
   margin-top: 25px;
   text-align: center;
   padding: 20px;
-  background-color: #e3f2fd; /* Light blue background for highlighting */
+  background-color: #e3f2fd;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #007bff; /* Border to emphasize the result */
+  border: 2px solid #007bff;
 }
 
+/* Media Queries */
+
+/* Small Devices (Mobile) */
 @media (max-width: 480px) {
   .calorie-calculator {
     padding: 15px;
+    max-width: 300px;
   }
 
   .calorie-calculator__title {
     font-size: 1.5rem;
   }
 
-  .calorie-calculator__input, .calorie-calculator__select, .calorie-calculator__button {
+  .calorie-calculator__input,
+  .calorie-calculator__select,
+  .calorie-calculator__button {
     font-size: 0.9rem;
   }
 
   .calorie-calculator__result {
     font-size: 1rem;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .calorie-calculator {
+    margin-top: 40px;
+    max-width: 500px;
+  }
+}
+
+/* Large Tablets (768px width, 1024px height) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .calorie-calculator {
+    margin-top: 50px;
+    max-width: 600px;
+  }
+
+  /* Input and Description font sizes */
+  .calorie-calculator__description,
+  .calorie-calculator__input,
+  .calorie-calculator__select {
+    font-size: 2rem;
+  }
+}
+
+/* Specific case for 768px width, 1024px height */
+@media (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  .calorie-calculator {
+    margin-top: 50px;
+    max-width: 600px;
   }
 }
