@@ -565,7 +565,19 @@ body {
   .container {
     width: 95%;
     max-width: 900px;
-    margin-right: 20px; /* Add margin to the right */
+    margin-right: 20px;
+  }
+
+  /* Make the header fixed */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .header h1 {
@@ -576,14 +588,13 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 0.3rem;
-    margin-right: 60px; /* Ensure the nav doesn't overflow */
+    margin-right: 60px;
   }
 
   nav ul li a {
     font-size: 0.88rem;
     display: inline-block;
     text-align: center;
-    transition: background-color 0.3s ease, padding 0.3s ease;
   }
 
   nav ul li a:hover {
@@ -591,6 +602,11 @@ body {
     padding: 0.5rem 0.75rem;
     margin: 0;
     height: 2.5rem;
+  }
+
+  /* Push the content down to accommodate the fixed header */
+  main {
+    margin-top: 40px;
   }
 
   .hero {
@@ -655,15 +671,11 @@ body {
     font-size: 0.9rem;
   }
 
-  main {
-    margin-top: 25px;
-  }
-
   .get-tips-container {
     padding: 20px;
     text-align: center;
-    background: linear-gradient(135deg, #f0f4f8, #d9e2ec); /* Subtle gradient background */
-    border-radius: 12px; /* Rounded corners for the container */
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec); 
+    border-radius: 12px;
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
