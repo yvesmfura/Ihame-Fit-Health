@@ -606,7 +606,7 @@ body {
 
   /* Push the content down to accommodate the fixed header */
   main {
-    margin-top: 40px;
+    margin-top: -10px;
   }
 
   .hero {
@@ -679,5 +679,12 @@ body {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Media query for devices with exactly 768x1024 resolution */
+@media only screen and (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  main {
+    margin-top: 40px;
   }
 }
