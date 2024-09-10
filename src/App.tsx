@@ -311,10 +311,10 @@ const App: React.FC = () => {
         <Route path="/build-body-women/glute-leg/leg-toning" element={<LegToningWomen />} />
         <Route path="/build-body-women/glute-leg/lower-body-circuits" element={<LowerBodyCircuitsWomen />} />
 
-        <Route path="/women/pre-post-natal-workouts" element={<PrePostNatalWorkoutsMainWomen />} />
-        <Route path="/women/pre-post-natal-workouts/prenatal" element={<PreNatalWorkoutsWomen />} />
-        <Route path="/women/pre-post-natal-workouts/postnatal" element={<PostNatalWorkoutsWomen />} />
-        <Route path="/women/pre-post-natal-workouts/core-and-pelvic" element={<CoreAndPelvicExercisesWomen />} />
+        <Route path="/build-body-women/pre-post-natal-workouts" element={<PrePostNatalWorkoutsMainWomen />} />
+        <Route path="/build-body-women/pre-post-natal-workouts/prenatal" element={<PreNatalWorkoutsWomen />} />
+        <Route path="/build-body-women/pre-post-natal-workouts/postnatal" element={<PostNatalWorkoutsWomen />} />
+        <Route path="/build-body-women/pre-post-natal-workouts/core-and-pelvic" element={<CoreAndPelvicExercisesWomen />} />
 
       </Routes>
         </main>

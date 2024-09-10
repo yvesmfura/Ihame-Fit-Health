@@ -1,0 +1,119 @@
+.women-subcategories-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffeef8; /* Light pinkish background */
+}
+
+.women-subcategories-title {
+    font-size: 2.2rem;
+    color: #e91e63; /* Vibrant pink color for the title */
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif; /* More feminine font style */
+}
+
+.women-subcategories-description {
+    font-size: 1.3rem;
+    color: #8e44ad; /* Softer purple for description */
+    margin-bottom: 30px;
+}
+
+.women-subcategories-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.women-subcategories-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #f48fb1; /* Light pink border */
+    border-radius: 10px;
+    background-color: #fff3f5; /* Light, feminine background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 260px;
+}
+
+.women-subcategories-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.2); /* Pinkish shadow on hover */
+}
+
+.women-subcategories-image-container,
+.women-subcategories-content {
+    flex: 1;
+    height: 100%;
+}
+
+.women-subcategories-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.women-subcategories-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.women-subcategories-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.women-subcategories-card-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #e91e63; /* Matching the vibrant pink title color */
+    font-family: 'Poppins', sans-serif;
+}
+
+.women-subcategories-card-text {
+    font-size: 1rem;
+    color: #8e44ad; /* Matching purple for consistency */
+    margin-bottom: 15px;
+}
+
+.women-subcategories-card-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff4081; /* Light pink button color */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.women-subcategories-card-link:hover {
+    background-color: #e91e63; /* Darker pink on hover */
+}
+
+/* Media Query for small screens */
+@media (max-width: 600px) {
+    .women-subcategories-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .women-subcategories-image-container {
+        margin-bottom: 15px;
+    }
+
+    .women-subcategories-content {
+        padding: 0;
+    }
+
+    .women-subcategories-card-title {
+        font-size: 1.3rem;
+    }
+
+    .women-subcategories-card-text {
+        font-size: 0.9rem;
+    }
+}
