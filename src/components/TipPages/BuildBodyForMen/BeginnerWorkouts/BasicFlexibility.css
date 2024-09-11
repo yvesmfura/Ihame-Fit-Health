@@ -1,0 +1,152 @@
+/* Container Styles */
+.basic-flexibility-men-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title and Description */
+.basic-flexibility-men-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.basic-flexibility-men-days-background {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+.basic-flexibility-men-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.basic-flexibility-men-subtitle {
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem 0;
+    color: #444;
+    text-align: center;
+}
+
+/* Benefits List */
+.basic-flexibility-men-benefits-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.basic-flexibility-men-benefits-list li {
+    margin-bottom: 10px;
+}
+
+/* Exercise Table */
+.basic-flexibility-men-exercise-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.basic-flexibility-men-exercise-table th,
+.basic-flexibility-men-exercise-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.basic-flexibility-men-exercise-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.basic-flexibility-men-exercise-table td ul {
+    padding-left: 20px;
+}
+
+.basic-flexibility-men-exercise-table td ul li {
+    margin-bottom: 5px;
+}
+
+/* Video Container */
+.basic-flexibility-men-video-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.basic-flexibility-men-video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    .basic-flexibility-men-container {
+        padding: 10px;
+    }
+
+    .basic-flexibility-men-title {
+        font-size: 2rem;
+    }
+
+    .basic-flexibility-men-description {
+        font-size: 1rem;
+    }
+
+    .basic-flexibility-men-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .basic-flexibility-men-exercise-table th,
+    .basic-flexibility-men-exercise-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .basic-flexibility-men-video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Mobile-Friendly Workout Table */
+    .basic-flexibility-men-exercise-table,
+    .basic-flexibility-men-exercise-table thead,
+    .basic-flexibility-men-exercise-table tbody,
+    .basic-flexibility-men-exercise-table th,
+    .basic-flexibility-men-exercise-table td,
+    .basic-flexibility-men-exercise-table tr {
+        display: block;
+    }
+
+    .basic-flexibility-men-exercise-table tr {
+        margin-bottom: 10px;
+    }
+
+    .basic-flexibility-men-exercise-table th,
+    .basic-flexibility-men-exercise-table td {
+        padding-left: 50%;
+        position: relative;
+        text-align: left;
+    }
+
+    .basic-flexibility-men-exercise-table th::before,
+    .basic-flexibility-men-exercise-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+}

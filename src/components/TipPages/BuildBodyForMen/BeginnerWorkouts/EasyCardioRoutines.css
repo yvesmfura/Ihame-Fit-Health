@@ -1,0 +1,171 @@
+/* Container Styles */
+.easy-cardio-men-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title and Description */
+.easy-cardio-men-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.easy-cardio-men-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.easy-cardio-men-subtitle {
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem 0;
+    color: #444;
+    text-align: center;
+}
+
+/* Workout Plan Table */
+.easy-cardio-men-workout-plan {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.easy-cardio-men-workout-plan th, 
+.easy-cardio-men-workout-plan td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.easy-cardio-men-workout-plan th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.easy-cardio-men-workout-plan td ul {
+    padding-left: 20px;
+}
+
+.easy-cardio-men-workout-plan td ul li {
+    margin-bottom: 5px;
+}
+
+.easy-cardio-men-days-background {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+/* Importance List */
+.easy-cardio-men-benefits-list,
+.easy-cardio-men-health-advice-list,
+.easy-cardio-men-food-advice-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.easy-cardio-men-benefits-list li,
+.easy-cardio-men-health-advice-list li,
+.easy-cardio-men-food-advice-list li {
+    margin-bottom: 10px;
+}
+
+/* Video Container */
+.easy-cardio-men-video-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.easy-cardio-men-video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    .easy-cardio-men-container {
+        padding: 10px;
+    }
+
+    .easy-cardio-men-title {
+        font-size: 2rem;
+    }
+
+    .easy-cardio-men-description {
+        font-size: 1rem;
+    }
+
+    .easy-cardio-men-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .easy-cardio-men-workout-plan th, 
+    .easy-cardio-men-workout-plan td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .easy-cardio-men-video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Mobile-Friendly Workout Table */
+    .easy-cardio-men-workout-plan, 
+    .easy-cardio-men-workout-plan thead, 
+    .easy-cardio-men-workout-plan tbody, 
+    .easy-cardio-men-workout-plan th, 
+    .easy-cardio-men-workout-plan td, 
+    .easy-cardio-men-workout-plan tr {
+        display: block;
+    }
+
+    .easy-cardio-men-workout-plan tr {
+        margin-bottom: 10px;
+    }
+
+    .easy-cardio-men-workout-plan th, 
+    .easy-cardio-men-workout-plan td {
+        padding-left: 50%;
+        position: relative;
+        text-align: left;
+    }
+
+    .easy-cardio-men-workout-plan th::before, 
+    .easy-cardio-men-workout-plan td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .easy-cardio-men-days-background {
+        background-color: #4A90E2;
+    }
+
+    .easy-cardio-men-workout-plan th {
+        background-color: transparent;
+        text-align: left;
+        font-weight: normal;
+        padding-left: 10px;
+    }
+
+    .easy-cardio-men-workout-plan td {
+        padding-left: 10px;
+    }
+}

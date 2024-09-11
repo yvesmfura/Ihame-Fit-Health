@@ -1,0 +1,167 @@
+/* Container Styles */
+.beginner-women-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff7f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Title and Description */
+.beginner-women-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #b13e53;
+    font-weight: bold;
+}
+
+.beginner-women-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6a4c93;
+    margin-bottom: 25px;
+}
+
+.beginner-women-subtitle {
+    font-size: 2rem;
+    margin: 1.5rem 0 1rem 0;
+    color: #d5678d;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Workout Plan Table */
+.beginner-women-workout-plan {
+    width: 100%;
+    margin: 25px 0;
+    border-collapse: collapse;
+}
+
+.beginner-women-workout-plan th, 
+.beginner-women-workout-plan td {
+    padding: 12px;
+    border: 1px solid #f2e3e4;
+    text-align: left;
+}
+
+.beginner-women-workout-plan th {
+    background-color: #fce8eb;
+    font-weight: bold;
+}
+
+.days-background-women-beginner {
+    background-color: #e89b9b;
+}
+
+.beginner-women-workout-plan td ul {
+    padding-left: 20px;
+}
+
+.beginner-women-workout-plan td ul li {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* Importance List */
+.beginner-women-importance-list {
+    list-style-type: circle;
+    margin-left: 25px;
+    margin-bottom: 35px;
+    color: #6a4c93;
+}
+
+.beginner-women-importance-list li {
+    margin-bottom: 12px;
+}
+
+/* Video Container */
+.beginner-women-video-container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.beginner-women-video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query for Phones */
+@media (max-width: 600px) {
+    .beginner-women-container {
+        padding: 12px;
+    }
+
+    .beginner-women-title {
+        font-size: 2rem;
+    }
+
+    .beginner-women-description {
+        font-size: 1rem;
+    }
+
+    .beginner-women-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .beginner-women-workout-plan th, 
+    .beginner-women-workout-plan td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .beginner-women-video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Mobile-Friendly Workout Table */
+    .beginner-women-workout-plan, 
+    .beginner-women-workout-plan thead, 
+    .beginner-women-workout-plan tbody, 
+    .beginner-women-workout-plan th, 
+    .beginner-women-workout-plan td, 
+    .beginner-women-workout-plan tr {
+        display: block;
+    }
+
+    .beginner-women-workout-plan tr {
+        margin-bottom: 10px;
+    }
+
+    .beginner-women-workout-plan th, 
+    .beginner-women-workout-plan td {
+        padding-left: 50%;
+        position: relative;
+        text-align: left;
+    }
+
+    .beginner-women-workout-plan th::before, 
+    .beginner-women-workout-plan td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+      
+    .beginner-women-workout-plan th {
+        background-color: transparent;
+        text-align: left;
+        font-weight: normal;
+        padding-left: 10px;
+    }
+
+    .beginner-women-workout-plan td {
+        padding-left: 10px;
+    }
+    
+}
