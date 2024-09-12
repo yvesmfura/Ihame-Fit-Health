@@ -1,0 +1,148 @@
+/* DynamicWarmUps.css */
+
+.dynamic-warm-ups-men-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
+.dynamic-warm-ups-men-container:hover {
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.dynamic-warm-ups-men-container h2 {
+    font-size: 2.8rem;
+    color: #0d47a1;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.dynamic-warm-ups-men-container h3 {
+    font-size: 2rem;
+    color: #212121;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    border-left: 5px solid #1a73e8;
+    padding-left: 15px;
+}
+
+.dynamic-warm-ups-men-container p {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    line-height: 1.75;
+    color: #424242;
+}
+
+.dynamic-warm-ups-men-container ul, 
+.dynamic-warm-ups-men-container ol {
+    margin-left: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.dynamic-warm-ups-men-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #333;
+    line-height: 1.7;
+}
+
+.dynamic-warm-ups-men-container ol li {
+    list-style-type: decimal;
+}
+
+.dynamic-warm-ups-men-container ul li {
+    list-style-type: disc;
+}
+
+.dynamic-warm-ups-men-container strong {
+    color: #0d47a1;
+}
+
+.dynamic-warm-ups-men-container iframe {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 720px;
+    height: 420px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.dynamic-warm-ups-men-container .dynamic-warm-ups-men-video {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+}
+
+/* Buttons for Interactions */
+.dynamic-warm-ups-men-container button {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dynamic-warm-ups-men-container button:hover {
+    background-color: #0d47a1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .dynamic-warm-ups-men-container {
+        padding: 20px;
+    }
+
+    .dynamic-warm-ups-men-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .dynamic-warm-ups-men-container h3 {
+        font-size: 1.7rem;
+    }
+
+    .dynamic-warm-ups-men-container p,
+    .dynamic-warm-ups-men-container li {
+        font-size: 1.05rem;
+    }
+
+    .dynamic-warm-ups-men-container iframe {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dynamic-warm-ups-men-container {
+        padding: 15px;
+    }
+
+    .dynamic-warm-ups-men-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .dynamic-warm-ups-men-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .dynamic-warm-ups-men-container p,
+    .dynamic-warm-ups-men-container li {
+        font-size: 0.95rem;
+    }
+
+    .dynamic-warm-ups-men-container iframe {
+        height: 220px;
+    }
+}

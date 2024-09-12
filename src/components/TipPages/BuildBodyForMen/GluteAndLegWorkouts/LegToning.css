@@ -1,0 +1,119 @@
+.leg-toning-men-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.leg-toning-men-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leg-toning-men-container h2, 
+.leg-toning-men-container h3 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.leg-toning-men-container h2:hover, 
+.leg-toning-men-container h3:hover {
+    color: #4CAF50;
+}
+
+.leg-toning-men-intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.leg-toning-men-intro-text:hover {
+    color: #4CAF50;
+}
+
+.leg-toning-men-importance-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 4px solid #4CAF50;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.leg-toning-men-importance-section:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.leg-toning-men-workouts-section {
+    margin-bottom: 30px;
+}
+
+.leg-toning-men-workout-list {
+    list-style: none;
+    padding: 0;
+}
+
+.leg-toning-men-workout-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 4px solid #4CAF50;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.leg-toning-men-workout-list li:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transform: translateX(5px);
+}
+
+.leg-toning-men-workout-list li strong {
+    color: #333;
+    font-size: 1rem;
+}
+
+.leg-toning-men-tips-section {
+    margin-bottom: 30px;
+}
+
+.leg-toning-men-tips-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.leg-toning-men-tips-list li {
+    margin: 10px 0;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.leg-toning-men-tips-list li:hover {
+    color: #4CAF50;
+}
+
+.leg-toning-men-video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.leg-toning-men-video-section iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.leg-toning-men-video-section iframe:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

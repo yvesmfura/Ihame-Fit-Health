@@ -1,0 +1,117 @@
+.relaxation-techniques-men-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.relaxation-techniques-men-container h2 {
+    color: #2e7d32;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.relaxation-techniques-men-container p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.relaxation-techniques-men-importance-section,
+.relaxation-techniques-men-plan-section,
+.relaxation-techniques-men-dos-donts-section,
+.relaxation-techniques-men-health-lifestyle-tips {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.relaxation-techniques-men-plan-list {
+    list-style: none;
+    padding: 0;
+}
+
+.relaxation-techniques-men-plan-list li {
+    background-color: #dcedc8;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 6px solid #76c7c0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.relaxation-techniques-men-plan-list li:hover {
+    background-color: #c8e6c9;
+    transform: scale(1.02);
+}
+
+.relaxation-techniques-men-dos-donts-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.relaxation-techniques-men-dos,
+.relaxation-techniques-men-donts {
+    flex: 1;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.relaxation-techniques-men-dos h4,
+.relaxation-techniques-men-donts h4 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.relaxation-techniques-men-dos ul,
+.relaxation-techniques-men-donts ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.relaxation-techniques-men-dos li,
+.relaxation-techniques-men-donts li {
+    margin: 10px 0;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.relaxation-techniques-men-dos li:hover,
+.relaxation-techniques-men-donts li:hover {
+    color: #76c7c0;
+}
+
+.relaxation-techniques-men-health-lifestyle-tips ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.relaxation-techniques-men-health-lifestyle-tips li {
+    margin: 10px 0;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.relaxation-techniques-men-health-lifestyle-tips li:hover {
+    color: #76c7c0;
+}
+
+.relaxation-techniques-men-video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.relaxation-techniques-men-video-section iframe {
+    border-radius: 8px;
+}

@@ -1,0 +1,118 @@
+.lower-body-circuits-men-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f6f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.lower-body-circuits-men-container h2, 
+.lower-body-circuits-men-container h3 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.lower-body-circuits-men-intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.lower-body-circuits-men-importance-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #3498db;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lower-body-circuits-men-workout-plan-section {
+    margin-bottom: 30px;
+}
+
+.lower-body-circuits-men-workout-list {
+    list-style: none;
+    padding: 0;
+}
+
+.lower-body-circuits-men-workout-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lower-body-circuits-men-workout-list li strong {
+    color: #333;
+    font-size: 1rem;
+}
+
+.lower-body-circuits-men-dos-donts-section {
+    margin-bottom: 30px;
+}
+
+.lower-body-circuits-men-dos-donts-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lower-body-circuits-men-dos,
+.lower-body-circuits-men-donts {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lower-body-circuits-men-dos h4,
+.lower-body-circuits-men-donts h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.lower-body-circuits-men-dos ul,
+.lower-body-circuits-men-donts ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.lower-body-circuits-men-dos li,
+.lower-body-circuits-men-donts li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.lower-body-circuits-men-health-lifestyle-tips {
+    margin-bottom: 30px;
+}
+
+.lower-body-circuits-men-health-lifestyle-tips ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.lower-body-circuits-men-health-lifestyle-tips li {
+    margin: 10px 0;
+    color: #555;
+}
+
+.lower-body-circuits-men-video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.lower-body-circuits-men-video-section iframe {
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}

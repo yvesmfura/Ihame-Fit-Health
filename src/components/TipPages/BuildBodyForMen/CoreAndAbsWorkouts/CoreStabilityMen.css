@@ -1,0 +1,111 @@
+/* CoreStabilityMen.css */
+
+.core-stability-men-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.core-stability-men-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.core-stability-men-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.core-stability-men-facts, 
+.core-stability-men-benefits, 
+.core-stability-men-workout-plan, 
+.core-stability-men-mistakes, 
+.core-stability-men-tips {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.core-stability-men-facts h3,
+.core-stability-men-benefits h3,
+.core-stability-men-workout-plan h3,
+.core-stability-men-mistakes h3,
+.core-stability-men-tips h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.core-stability-men-facts ul, 
+.core-stability-men-benefits ul, 
+.core-stability-men-workout-plan ul, 
+.core-stability-men-mistakes ul, 
+.core-stability-men-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.core-stability-men-facts ul li, 
+.core-stability-men-benefits ul li, 
+.core-stability-men-workout-plan ul li, 
+.core-stability-men-mistakes ul li, 
+.core-stability-men-tips ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.core-stability-men-facts ul li strong {
+    color: #000;
+}
+
+.core-stability-men-workout-plan ul li ul {
+    margin-left: 20px;
+}
+
+.core-stability-men-video {
+    text-align: center;
+}
+
+.core-stability-men-video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .core-stability-men-container {
+        padding: 15px;
+    }
+
+    .core-stability-men-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .core-stability-men-facts h3,
+    .core-stability-men-benefits h3,
+    .core-stability-men-workout-plan h3,
+    .core-stability-men-mistakes h3,
+    .core-stability-men-tips h3 {
+        font-size: 1.25rem;
+    }
+
+    .core-stability-men-video iframe {
+        height: 250px;
+    }
+}

@@ -1,0 +1,183 @@
+/* UpperBodyMen.css */
+
+/* General Styles for Desktops and Tablets */
+.upper-body-men-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.upper-body-men-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center the main title */
+}
+
+.upper-body-men-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* Justify content */
+}
+
+.upper-body-men-workout-plan {
+    background: linear-gradient(135deg, #ffecb3, #fce4ec);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.upper-body-men-workout-plan h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center; /* Center the workout plan title */
+}
+
+.upper-body-men-workout-plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center; /* Center the subtitle */
+}
+
+.upper-body-men-workout-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify; /* Justify content */
+}
+
+.upper-body-men-workout-list li {
+    margin-bottom: 10px;
+}
+
+.upper-body-men-tips-section {
+    margin-bottom: 40px;
+    background-color: #e3f2fd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upper-body-men-tips-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #1565c0;
+    text-align: center; /* Center the tips section title */
+}
+
+.upper-body-men-tips-section p {
+    margin-bottom: 15px;
+    color: #616161;
+    font-size: 1.1rem;
+    text-align: justify; /* Justify content */
+}
+
+.upper-body-men-video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.upper-body-men-video-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #0288d1;
+    text-align: center; /* Center the video section title */
+}
+
+.upper-body-men-video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Phones */
+@media (max-width: 768px) {
+    .upper-body-men-container {
+        padding: 15px;
+    }
+
+    .upper-body-men-description {
+        font-size: 1rem;
+    }
+
+    .upper-body-men-workout-plan {
+        padding: 15px;
+    }
+
+    .upper-body-men-workout-plan h2 {
+        font-size: 1.5rem;
+    }
+
+    .upper-body-men-workout-plan h3 {
+        font-size: 1.3rem;
+    }
+
+    .upper-body-men-workout-list {
+        font-size: 1rem;
+    }
+
+    .upper-body-men-tips-section {
+        padding: 15px;
+    }
+
+    .upper-body-men-tips-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .upper-body-men-video-section iframe {
+        width: 100%;
+        height: 220px;
+    }
+}
+
+/* Media Queries for Smaller Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .upper-body-men-container {
+        padding: 10px;
+    }
+
+    .upper-body-men-description {
+        font-size: 0.95rem;
+    }
+
+    .upper-body-men-workout-plan {
+        padding: 10px;
+    }
+
+    .upper-body-men-workout-plan h2 {
+        font-size: 1.2rem;
+    }
+
+    .upper-body-men-workout-plan h3 {
+        font-size: 1rem;
+    }
+
+    .upper-body-men-workout-list {
+        font-size: 0.95rem;
+    }
+
+    .upper-body-men-tips-section {
+        padding: 10px;
+    }
+
+    .upper-body-men-tips-section h3 {
+        font-size: 1.1rem;
+    }
+
+    .upper-body-men-video-section iframe {
+        width: 100%;
+        height: 200px;
+    }
+}

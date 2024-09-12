@@ -1,0 +1,67 @@
+.swimming-training-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    background: #eaf2f8; /* Light blue background for the page */
+}
+
+.swimming-training-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker shade for titles */
+}
+
+.swimming-training-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #34495e; /* Darker gray for text */
+}
+
+.swimming-training-routines-section,
+.swimming-training-plan-section,
+.swimming-training-tips-section,
+.swimming-training-video-section {
+    background: #ffffff; /* White background for sections */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swimming-training-routines-section h3,
+.swimming-training-plan-section h3,
+.swimming-training-tips-section h3 {
+    color: #3498db; /* Calming blue color */
+}
+
+.swimming-training-routines-list,
+.swimming-training-plan-list,
+.swimming-training-tips-list {
+    list-style: none;
+    padding: 0;
+}
+
+.swimming-training-routines-list li,
+.swimming-training-plan-list li,
+.swimming-training-tips-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.swimming-training-video-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.swimming-training-video-section h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.swimming-training-video-section iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

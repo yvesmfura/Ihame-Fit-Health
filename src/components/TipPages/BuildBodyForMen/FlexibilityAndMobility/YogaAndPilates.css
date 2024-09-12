@@ -1,0 +1,103 @@
+/* YogaAndPilates.css */
+
+.yoga-pilates-men-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
+.yoga-pilates-men-container h2 {
+    font-size: 2.8rem;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.yoga-pilates-men-container h3 {
+    font-size: 2rem;
+    color: #424242;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    border-left: 5px solid #00796b;
+    padding-left: 15px;
+}
+
+.yoga-pilates-men-container p {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    line-height: 1.75;
+    color: #424242;
+}
+
+.yoga-pilates-men-container ol, 
+.yoga-pilates-men-container ul {
+    margin-left: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.yoga-pilates-men-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.yoga-pilates-men-container iframe {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 720px;
+    height: 420px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .yoga-pilates-men-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .yoga-pilates-men-container h3 {
+        font-size: 1.7rem;
+    }
+
+    .yoga-pilates-men-container p,
+    .yoga-pilates-men-container li {
+        font-size: 1.05rem;
+    }
+
+    .yoga-pilates-men-container iframe {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .yoga-pilates-men-container {
+        padding: 15px;
+    }
+
+    .yoga-pilates-men-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .yoga-pilates-men-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .yoga-pilates-men-container p,
+    .yoga-pilates-men-container li {
+        font-size: 0.95rem;
+    }
+
+    .yoga-pilates-men-container iframe {
+        height: 220px;
+    }
+}

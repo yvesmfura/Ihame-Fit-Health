@@ -1,0 +1,107 @@
+/* LowerAbsMen.css */
+
+.lower-abs-men-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.lower-abs-men-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.lower-abs-men-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.lower-abs-men-facts, 
+.lower-abs-men-benefits, 
+.lower-abs-men-workout-plan, 
+.lower-abs-men-mistakes, 
+.lower-abs-men-tips {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.lower-abs-men-facts h3,
+.lower-abs-men-benefits h3,
+.lower-abs-men-workout-plan h3,
+.lower-abs-men-mistakes h3,
+.lower-abs-men-tips h3 {
+    font-size: 1.5rem;
+    color: #3498db;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.lower-abs-men-facts ul, 
+.lower-abs-men-benefits ul, 
+.lower-abs-men-workout-plan ul, 
+.lower-abs-men-mistakes ul, 
+.lower-abs-men-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lower-abs-men-facts ul li, 
+.lower-abs-men-benefits ul li, 
+.lower-abs-men-workout-plan ul li, 
+.lower-abs-men-mistakes ul li, 
+.lower-abs-men-tips ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.lower-abs-men-workout-plan ul li ul {
+    margin-left: 20px;
+}
+
+.lower-abs-men-video {
+    text-align: center;
+}
+
+.lower-abs-men-video iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .lower-abs-men-container {
+        padding: 15px;
+    }
+
+    .lower-abs-men-container h2 {
+        font-size: 1.75rem;
+    }
+
+    .lower-abs-men-facts h3,
+    .lower-abs-men-benefits h3,
+    .lower-abs-men-workout-plan h3,
+    .lower-abs-men-mistakes h3,
+    .lower-abs-men-tips h3 {
+        font-size: 1.25rem;
+    }
+
+    .lower-abs-men-video iframe {
+        height: 250px;
+    }
+}

@@ -1,0 +1,190 @@
+/* General Container */
+.glute-activation-men-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Smooth transitions on hover */
+.glute-activation-men-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Titles */
+.glute-activation-men-container h2,
+.glute-activation-men-container h3 {
+    color: #1a202c; /* Darker shade for titles */
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.glute-activation-men-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4fd1c5; /* Soft teal underline */
+    text-align: left;
+}
+
+/* Paragraph Text */
+.glute-activation-men-container p {
+    line-height: 1.8;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #4a5568;
+}
+
+/* Importance Section */
+.glute-activation-men-importance-section {
+    background-color: #edf2f7;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.glute-activation-men-importance-section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 30-Minute Workout Plan */
+.glute-activation-men-workout-plan-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.glute-activation-men-workout-plan-section ul li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.glute-activation-men-workout-plan-section ul li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.glute-activation-men-workout-plan-section ul li strong {
+    color: #38b2ac; /* Teal color for highlights */
+}
+
+/* Do's and Don'ts Grid */
+.glute-activation-men-dos-donts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.glute-activation-men-dos, .glute-activation-men-donts {
+    background-color: #f7fafc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.glute-activation-men-dos:hover, .glute-activation-men-donts:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.glute-activation-men-dos h4 {
+    color: #48bb78; /* Green for Do's */
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.glute-activation-men-donts h4 {
+    color: #e53e3e; /* Red for Don'ts */
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.glute-activation-men-dos ul,
+.glute-activation-men-donts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.glute-activation-men-dos ul li,
+.glute-activation-men-donts ul li {
+    background-color: #edf2f7;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #2d3748;
+}
+
+/* Health and Lifestyle Tips */
+.glute-activation-men-health-lifestyle-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.glute-activation-men-health-lifestyle-tips ul li {
+    background-color: #e6fffa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #38b2ac; /* Teal accent */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.glute-activation-men-health-lifestyle-tips ul li:hover {
+    background-color: #c6f6d5; /* Softer background on hover */
+    border-left: 5px solid #48bb78; /* Green accent on hover */
+}
+
+/* Video Section */
+.glute-activation-men-video-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.glute-activation-men-video-section iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .glute-activation-men-container {
+        padding: 20px;
+    }
+
+    .glute-activation-men-dos-donts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .glute-activation-men-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .glute-activation-men-container h3 {
+        font-size: 1.4rem;
+    }
+}

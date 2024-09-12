@@ -1,0 +1,102 @@
+/* AgilityDrills.css */
+
+.agility-drills-men-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.agility-drills-men-container h2 {
+    font-size: 2.5rem;
+    color: #f57c00;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.agility-drills-men-container h3 {
+    font-size: 2rem;
+    color: #424242;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    border-left: 5px solid #f57c00;
+    padding-left: 15px;
+}
+
+.agility-drills-men-container p {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    line-height: 1.75;
+    color: #333;
+}
+
+.agility-drills-men-container ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.agility-drills-men-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.agility-drills-men-container iframe {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 720px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .agility-drills-men-container h2 {
+        font-size: 2rem;
+    }
+
+    .agility-drills-men-container h3 {
+        font-size: 1.7rem;
+    }
+
+    .agility-drills-men-container p,
+    .agility-drills-men-container li {
+        font-size: 1rem;
+    }
+
+    .agility-drills-men-container iframe {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .agility-drills-men-container {
+        padding: 15px;
+    }
+
+    .agility-drills-men-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .agility-drills-men-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .agility-drills-men-container p,
+    .agility-drills-men-container li {
+        font-size: 0.9rem;
+    }
+
+    .agility-drills-men-container iframe {
+        height: 220px;
+    }
+}

@@ -1,0 +1,103 @@
+/* StretchingRoutines.css */
+
+.stretching-routines-men-container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
+.stretching-routines-men-container h2 {
+    font-size: 2.8rem;
+    color: #ff5722;
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.stretching-routines-men-container h3 {
+    font-size: 2rem;
+    color: #424242;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    border-left: 5px solid #ff5722;
+    padding-left: 15px;
+}
+
+.stretching-routines-men-container p {
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    line-height: 1.75;
+    color: #424242;
+}
+
+.stretching-routines-men-container ol, 
+.stretching-routines-men-container ul {
+    margin-left: 30px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+}
+
+.stretching-routines-men-container li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.stretching-routines-men-container iframe {
+    display: block;
+    margin: 25px auto;
+    width: 100%;
+    max-width: 720px;
+    height: 420px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+    .stretching-routines-men-container h2 {
+        font-size: 2.2rem;
+    }
+
+    .stretching-routines-men-container h3 {
+        font-size: 1.7rem;
+    }
+
+    .stretching-routines-men-container p,
+    .stretching-routines-men-container li {
+        font-size: 1.05rem;
+    }
+
+    .stretching-routines-men-container iframe {
+        height: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stretching-routines-men-container {
+        padding: 15px;
+    }
+
+    .stretching-routines-men-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .stretching-routines-men-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .stretching-routines-men-container p,
+    .stretching-routines-men-container li {
+        font-size: 0.95rem;
+    }
+
+    .stretching-routines-men-container iframe {
+        height: 220px;
+    }
+}

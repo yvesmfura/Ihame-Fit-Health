@@ -1,0 +1,106 @@
+.cardio-hiit-men-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px; /* Increased radius for a more pronounced curve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardio-hiit-men-container h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cardio-hiit-men-container p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.cardio-hiit-men-benefits, 
+.cardio-hiit-men-workout-plan, 
+.cardio-hiit-men-dos-donts, 
+.cardio-hiit-men-video {
+    margin-bottom: 30px;
+}
+
+.cardio-hiit-men-benefits h3, 
+.cardio-hiit-men-workout-plan h3, 
+.cardio-hiit-men-dos-donts h3, 
+.cardio-hiit-men-video h3 {
+    font-size: 1.75rem;
+    color: #444;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cardio-hiit-men-benefits ul, 
+.cardio-hiit-men-workout-plan ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.cardio-hiit-men-benefits li, 
+.cardio-hiit-men-workout-plan li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.cardio-hiit-men-dos-donts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cardio-hiit-men-dos, 
+.cardio-hiit-men-donts {
+    flex: 1;
+    min-width: 260px;
+    border-radius: 10px; /* Rounded corners for each section */
+    background-color: #f9f9f9;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardio-hiit-men-dos h4, 
+.cardio-hiit-men-donts h4 {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.cardio-hiit-men-dos ul, 
+.cardio-hiit-men-donts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cardio-hiit-men-dos ul li, 
+.cardio-hiit-men-donts ul li {
+    background-color: #f7f7f7;
+    padding: 12px;
+    border-radius: 10px; /* Curved edges for list items */
+    margin-bottom: 10px;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.cardio-hiit-men-video-container {
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for video container */
+    overflow: hidden; /* Ensures the video fits within the curved container */
+}
+
+.cardio-hiit-men-video-container iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+}

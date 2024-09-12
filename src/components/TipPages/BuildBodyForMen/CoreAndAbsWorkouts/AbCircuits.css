@@ -1,0 +1,100 @@
+/* AbCircuits.css */
+
+.ab-circuits-men-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ab-circuits-men-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.ab-circuits-men-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.ab-circuits-men-container section {
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #1a73e8;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #000;
+}
+
+ul li ul {
+    margin-left: 20px;
+}
+
+.importance-men-section,
+.dos-donts-men-section,
+.health-lifestyle-men-section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.workout-plan-men-section ul li {
+    margin-bottom: 20px;
+}
+
+.video-men-section {
+    text-align: center;
+}
+
+.video-men-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .ab-circuits-men-container {
+        padding: 15px;
+    }
+
+    .ab-circuits-men-container h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .video-men-section iframe {
+        height: 250px;
+    }
+}

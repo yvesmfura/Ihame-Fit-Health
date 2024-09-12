@@ -1,0 +1,83 @@
+/* FullBodyStrengthMen.css */
+
+.full-body-strength-men-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.full-body-strength-men-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.full-body-strength-men-workout-plan {
+    background: linear-gradient(135deg, #e3f2fd, #f1f8e9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.full-body-strength-men-workout-plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.full-body-strength-men-workout-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.full-body-strength-men-workout-list li {
+    margin-bottom: 10px;
+}
+
+.full-body-strength-men-tips-section {
+    margin-bottom: 40px;
+    background-color: #fffde7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.full-body-strength-men-tips-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.full-body-strength-men-tips-section p {
+    margin-bottom: 15px;
+    color: #616161;
+    font-size: 1.1rem;
+}
+
+.full-body-strength-men-video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.full-body-strength-men-video-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #0288d1;
+}
+
+.full-body-strength-men-video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

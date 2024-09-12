@@ -1,0 +1,117 @@
+.foam-rolling-men-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.foam-rolling-men-container h2 {
+    color: #4a90e2;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.foam-rolling-men-container p {
+    text-align: center;
+    font-size: 1.15rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.foam-rolling-men-importance-section,
+.foam-rolling-men-plan-section,
+.foam-rolling-men-dos-donts-section,
+.foam-rolling-men-health-lifestyle-tips {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.foam-rolling-men-plan-list {
+    list-style: none;
+    padding: 0;
+}
+
+.foam-rolling-men-plan-list li {
+    background-color: #e1f5fe;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 6px solid #4a90e2;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.foam-rolling-men-plan-list li:hover {
+    background-color: #b3e5fc;
+    transform: scale(1.02);
+}
+
+.foam-rolling-men-dos-donts-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.foam-rolling-men-dos,
+.foam-rolling-men-donts {
+    flex: 1;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.foam-rolling-men-dos h4,
+.foam-rolling-men-donts h4 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.foam-rolling-men-dos ul,
+.foam-rolling-men-donts ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.foam-rolling-men-dos li,
+.foam-rolling-men-donts li {
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.foam-rolling-men-dos li:hover,
+.foam-rolling-men-donts li:hover {
+    color: #4a90e2;
+}
+
+.foam-rolling-men-health-lifestyle-tips ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.foam-rolling-men-health-lifestyle-tips li {
+    margin: 10px 0;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.foam-rolling-men-health-lifestyle-tips li:hover {
+    color: #4a90e2;
+}
+
+.foam-rolling-men-video-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.foam-rolling-men-video-section iframe {
+    border-radius: 8px;
+}

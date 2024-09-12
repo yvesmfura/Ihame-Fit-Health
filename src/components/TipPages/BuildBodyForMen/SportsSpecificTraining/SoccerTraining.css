@@ -1,0 +1,130 @@
+.soccer-training-men-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    background: #f2f2f2; /* Light background for the container */
+}
+
+.soccer-training-men-container h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Darker shade for titles */
+}
+
+.soccer-training-men-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #34495e; /* Darker gray for text */
+}
+
+.soccer-training-men-importance-section {
+    background: #ffffff; /* White background for sections */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.soccer-training-men-importance-section h3 {
+    color: #3498db; /* Calming blue color */
+}
+
+.soccer-training-men-plan-section {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.soccer-training-men-plan-section h3 {
+    color: #3498db;
+}
+
+.soccer-training-men-plan-list {
+    list-style: none;
+    padding: 0;
+}
+
+.soccer-training-men-plan-list li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.soccer-training-men-dos-donts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.soccer-training-men-dos-donts-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.soccer-training-men-dos,
+.soccer-training-men-donts {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.soccer-training-men-dos h4,
+.soccer-training-men-donts h4 {
+    color: #2ecc71; /* Fresh green color */
+}
+
+.soccer-training-men-dos ul,
+.soccer-training-men-donts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.soccer-training-men-dos ul li,
+.soccer-training-men-donts ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.soccer-training-men-health-lifestyle-tips {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.soccer-training-men-health-lifestyle-tips h3 {
+    color: #2ecc71;
+}
+
+.soccer-training-men-health-lifestyle-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.soccer-training-men-health-lifestyle-tips ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.soccer-training-men-video-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.soccer-training-men-video-section h3 {
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.soccer-training-men-video-section iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
