@@ -75,9 +75,9 @@ import BalanceCoordinationMen from './components/TipPages/BuildBodyForMen/Functi
 import EverydayStrengthMen from './components/TipPages/BuildBodyForMen/FunctionalTraining/EverydayStrength';
 import AgilityDrillsMen from './components/TipPages/BuildBodyForMen/FunctionalTraining/AgilityDrills';
 
-import IntroBodyweightMen from './components/TipPages/BuildBodyForMen/BeginnerWorkouts/IntroBodyweightExercises';
-import EasyCardioMen from './components/TipPages/BuildBodyForMen/BeginnerWorkouts/EasyCardioRoutines';
-import BasicFlexibilityMen from './components/TipPages/BuildBodyForMen/BeginnerWorkouts/BasicFlexibility';
+import IntroBodyweightMen from './components/TipPages/BuildBodyForMen/BeginnerWorkouts/IntroBodyweightExercises.tsx';
+import EasyCardioMen from './components/TipPages/BuildBodyForMen/BeginnerWorkouts/EasyCardioRoutines.tsx';
+import BasicFlexibilityMen from './components/TipPages/BuildBodyForMen/BeginnerWorkouts/BasicFlexibility.tsx';
 
 import PostWorkoutStretchingMen from './components/TipPages/BuildBodyForMen/RecoveryAndMobility/PostWorkoutStretching';
 import RelaxationTechniquesMen from './components/TipPages/BuildBodyForMen/RecoveryAndMobility/RelaxationTechniques';
