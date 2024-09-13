@@ -1,0 +1,146 @@
+/* Container Styling */
+.stretching-men-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fef3f9; /* Very light pink background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Title Styling */
+.stretching-men-title,
+.stretching-men-subtitle {
+    color: #d87a9b; /* Soft pink color */
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.stretching-men-title {
+    font-size: 32px;
+}
+
+.stretching-men-subtitle {
+    font-size: 24px;
+}
+
+/* Description Styling */
+.stretching-men-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #a17b8e; /* Medium pinkish gray */
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Importance Section */
+.stretching-men-importance {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for clarity */
+    border-left: 5px solid #d87a9b; /* Soft pink border */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stretching-men-importance ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Workout Plan */
+.stretching-men-plan {
+    margin-bottom: 30px;
+}
+
+.stretching-men-plan ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.stretching-men-plan ol li {
+    background-color: #ffffff; /* White background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #d87a9b; /* Soft pink border */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stretching-men-plan ol li strong {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Do's and Don'ts Section */
+.stretching-men-dos-donts {
+    margin-bottom: 30px;
+}
+
+.stretching-men-dos-donts-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.stretching-men-dos,
+.stretching-men-donts {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for consistency */
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.stretching-men-dos h4,
+.stretching-men-donts h4 {
+    color: #d87a9b; /* Soft pink color */
+    margin-bottom: 10px;
+}
+
+.stretching-men-dos ul,
+.stretching-men-donts ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.stretching-men-dos li,
+.stretching-men-donts li {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Health and Lifestyle Tips */
+.stretching-men-health-tips,
+.stretching-men-lifestyle-tips {
+    margin-bottom: 30px;
+}
+
+.stretching-men-health-tips ul,
+.stretching-men-lifestyle-tips ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.stretching-men-health-tips li,
+.stretching-men-lifestyle-tips li {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Video Section */
+.stretching-men-video {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.stretching-men-video-frame {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+

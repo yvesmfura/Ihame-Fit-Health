@@ -1,0 +1,142 @@
+.prenatal-workout-women-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+.prenatal-workout-women-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.prenatal-workout-women-title {
+    font-size: 2.8rem;
+    color: #d081c9;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.prenatal-workout-women-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #d081c9;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prenatal-workout-women-intro {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #7d7d7d;
+}
+
+.prenatal-workout-women-section-title {
+    font-size: 1.9rem;
+    color: #ff6fa9;
+    margin-bottom: 18px;
+    text-align: left;
+    border-left: 4px solid #ff6fa9;
+    padding-left: 15px;
+}
+
+.prenatal-workout-women-list,
+.prenatal-workout-women-plan-list {
+    padding-left: 20px;
+    list-style-type: circle;
+    margin-bottom: 25px;
+}
+
+.prenatal-workout-women-plan-list li,
+.prenatal-workout-women-list li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.prenatal-workout-women-30-min-plan {
+    padding: 25px;
+    border-left: 6px solid #ff6fa9;
+    background-color: #fff9fb;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    transition: background-color 0.4s ease;
+}
+
+.prenatal-workout-women-30-min-plan:hover {
+    background-color: #ffe1ed;
+}
+
+.prenatal-workout-women-dos,
+.prenatal-workout-women-donts {
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding: 20px;
+    background-color: #ffeef6;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.prenatal-workout-women-dos:hover,
+.prenatal-workout-women-donts:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.prenatal-workout-women-dos h4,
+.prenatal-workout-women-donts h4 {
+    color: #ff6fa9;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.prenatal-workout-women-description {
+    font-size: 1.15rem;
+    color: #7d7d7d;
+    margin-bottom: 20px;
+}
+
+.prenatal-workout-women-video {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.prenatal-workout-women-video-list {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.4s ease;
+}
+
+iframe:hover {
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .prenatal-workout-women-dos,
+    .prenatal-workout-women-donts {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

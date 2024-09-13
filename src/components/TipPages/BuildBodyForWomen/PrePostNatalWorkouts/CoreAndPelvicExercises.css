@@ -1,0 +1,129 @@
+/* CoreAndPelvicExercises.css */
+
+.core-and-pelvic-exercises-women-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdf0f7; /* Light pink background */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.core-and-pelvic-exercises-women-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #d64582; /* Feminine pink color */
+    margin-bottom: 1.5rem;
+}
+
+.core-and-pelvic-exercises-women-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #5f5f5f;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.core-and-pelvic-exercises-women-section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d64582;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.core-and-pelvic-exercises-women-section-title:hover {
+    color: #f08bb3; /* Lighter pink on hover */
+}
+
+.core-and-pelvic-exercises-women-list,
+.core-and-pelvic-exercises-women-plan-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #5f5f5f;
+}
+
+.core-and-pelvic-exercises-women-plan-list li {
+    margin-bottom: 10px;
+}
+
+.core-and-pelvic-exercises-women-plan-list li strong {
+    color: #d64582;
+}
+
+.core-and-pelvic-exercises-women-benefits,
+.core-and-pelvic-exercises-women-prenatal-plan,
+.core-and-pelvic-exercises-women-postnatal-plan,
+.core-and-pelvic-exercises-women-medical-facts,
+.core-and-pelvic-exercises-women-research,
+.core-and-pelvic-exercises-women-dos-donts,
+.core-and-pelvic-exercises-women-mistakes-solutions,
+.core-and-pelvic-exercises-women-health-tips,
+.core-and-pelvic-exercises-women-lifestyle-tips {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.core-and-pelvic-exercises-women-benefits:hover,
+.core-and-pelvic-exercises-women-prenatal-plan:hover,
+.core-and-pelvic-exercises-women-postnatal-plan:hover,
+.core-and-pelvic-exercises-women-medical-facts:hover,
+.core-and-pelvic-exercises-women-research:hover,
+.core-and-pelvic-exercises-women-dos-donts:hover,
+.core-and-pelvic-exercises-women-mistakes-solutions:hover,
+.core-and-pelvic-exercises-women-health-tips:hover,
+.core-and-pelvic-exercises-women-lifestyle-tips:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.core-and-pelvic-exercises-women-video {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.core-and-pelvic-exercises-women-video-list h4 {
+    color: #d64582;
+    margin-bottom: 0.5rem;
+}
+
+.core-and-pelvic-exercises-women-video-frame {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.core-and-pelvic-exercises-women-video-frame:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .core-and-pelvic-exercises-women-container {
+        padding: 15px;
+    }
+
+    .core-and-pelvic-exercises-women-title {
+        font-size: 1.75rem;
+    }
+
+    .core-and-pelvic-exercises-women-section-title {
+        font-size: 1.3rem;
+    }
+
+    .core-and-pelvic-exercises-women-intro {
+        font-size: 1rem;
+    }
+
+    .core-and-pelvic-exercises-women-video-frame {
+        width: 100%;
+        height: auto;
+    }
+}

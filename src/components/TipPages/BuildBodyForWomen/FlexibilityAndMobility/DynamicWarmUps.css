@@ -1,0 +1,98 @@
+/* Container Styling */
+.Dynamic-Warmup-Women-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark gray text for readability */
+    background-color: #fef3f9; /* Very light pink background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Title Styling */
+.Dynamic-Warmup-Women-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #e6a2b1; /* Soft rose color for title */
+    text-align: center;
+}
+
+/* Description Styling */
+.Dynamic-Warmup-Women-description {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555; /* Dark gray text for readability */
+    text-align: center;
+}
+
+/* Subtitle Styling */
+.Dynamic-Warmup-Women-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #e6a2b1; /* Matching color for subtitles */
+    text-align: center;
+}
+
+/* Plan and Tips List Styling */
+.Dynamic-Warmup-Women-plan,
+.Dynamic-Warmup-Women-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Do's and Don'ts Section Styling */
+.Dynamic-Warmup-Women-dos-donts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.Dynamic-Warmup-Women-dos,
+.Dynamic-Warmup-Women-donts {
+    width: 48%;
+    padding: 15px;
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.Dynamic-Warmup-Women-dos ul,
+.Dynamic-Warmup-Women-donts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Dynamic-Warmup-Women-dos h4,
+.Dynamic-Warmup-Women-donts h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #e6a2b1; /* Soft rose color for headers */
+}
+
+.Dynamic-Warmup-Women-dos li,
+.Dynamic-Warmup-Women-donts li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Video Section Styling */
+.Dynamic-Warmup-Women-video {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.Dynamic-Warmup-Women-video-frame {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}

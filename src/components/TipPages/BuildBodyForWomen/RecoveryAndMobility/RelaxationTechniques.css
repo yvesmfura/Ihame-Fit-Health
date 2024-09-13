@@ -1,0 +1,141 @@
+/* Container */
+.relaxation-techniques-women-container {
+    background-color: #faf6ff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.relaxation-techniques-women-container:hover {
+    background-color: #f0e8ff;
+    transform: scale(1.02);
+}
+
+/* Title */
+.relaxation-techniques-women-title {
+    font-size: 2.5rem;
+    color: #8b5fbf;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.relaxation-techniques-women-title:hover {
+    color: #6e48a7;
+}
+
+/* Description */
+.relaxation-techniques-women-description {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Subheading */
+.relaxation-techniques-women-subheading {
+    font-size: 1.8rem;
+    color: #8b5fbf;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-left: 5px solid #8b5fbf;
+    padding-left: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.relaxation-techniques-women-subheading:hover {
+    color: #6e48a7;
+    border-color: #6e48a7;
+}
+
+/* Text */
+.relaxation-techniques-women-text {
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Video Section */
+.relaxation-techniques-women-video-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.relaxation-techniques-women-video {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.relaxation-techniques-women-video:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Lists (Do's and Don'ts, Tips) */
+.relaxation-techniques-women-list {
+    margin: 25px 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.relaxation-techniques-women-list li {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.relaxation-techniques-women-list li:hover {
+    color: #8b5fbf;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .relaxation-techniques-women-container {
+        padding: 30px;
+    }
+
+    .relaxation-techniques-women-title {
+        font-size: 2rem;
+    }
+
+    .relaxation-techniques-women-subheading {
+        font-size: 1.5rem;
+    }
+
+    .relaxation-techniques-women-text,
+    .relaxation-techniques-women-list li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .relaxation-techniques-women-container {
+        padding: 20px;
+    }
+
+    .relaxation-techniques-women-title {
+        font-size: 1.8rem;
+    }
+
+    .relaxation-techniques-women-subheading {
+        font-size: 1.3rem;
+    }
+
+    .relaxation-techniques-women-text,
+    .relaxation-techniques-women-list li {
+        font-size: 0.95rem;
+    }
+}

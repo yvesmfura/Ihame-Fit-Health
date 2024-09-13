@@ -1,0 +1,80 @@
+/* LowerAbs.css */
+.lower-abs-women-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #faf5f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lower-abs-women-header {
+    font-size: 2.5rem;
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.lower-abs-women-description {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.lower-abs-women-benefits,
+.lower-abs-women-workout,
+.lower-abs-women-tips {
+    margin-bottom: 30px;
+}
+
+.lower-abs-women-subheader {
+    font-size: 1.8rem;
+    color: #d81b60;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+}
+
+.lower-abs-women-paragraph {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+}
+
+.lower-abs-women-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #444;
+    font-family: 'Lato', sans-serif;
+}
+
+.lower-abs-women-list li {
+    margin-bottom: 10px;
+}
+
+.lower-abs-women-tip {
+    margin-bottom: 20px;
+}
+
+.lower-abs-women-subsubheader {
+    font-size: 1.4rem;
+    color: #ad1457;
+    margin-bottom: 5px;
+}
+
+.lower-abs-women-video-frame {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.lower-abs-women-video-frame:hover {
+    transform: scale(1.05);
+}

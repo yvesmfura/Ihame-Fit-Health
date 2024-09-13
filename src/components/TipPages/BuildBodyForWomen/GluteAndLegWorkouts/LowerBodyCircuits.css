@@ -1,0 +1,183 @@
+/* General Container */
+.lower-body-women-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f4fb;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.lower-body-women-container:hover {
+    background-color: #faf7fc;
+}
+
+/* Section Titles */
+.lower-body-women-title {
+    font-size: 2.5rem;
+    color: #aa66cc;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.lower-body-women-title:hover {
+    color: #cc88ff;
+}
+
+.lower-body-women-subtitle {
+    font-size: 1.8rem;
+    color: #a94494;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.lower-body-women-subtitle:hover {
+    color: #d46fd4;
+}
+
+/* Text Content */
+.lower-body-women-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Lists */
+.lower-body-women-list {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 1rem;
+}
+
+.lower-body-women-list li {
+    margin-bottom: 10px;
+}
+
+.lower-body-women-list ul {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+/* Video Section */
+.lower-body-women-videos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.lower-body-women-video {
+    flex: 1;
+    max-width: 550px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.lower-body-women-video:hover {
+    transform: scale(1.05);
+}
+
+.lower-body-women-video iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Facts Section */
+.lower-body-women-section {
+    margin-bottom: 30px;
+}
+
+.lower-body-women-dos-donts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.lower-body-women-dos-donts div {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.lower-body-women-dos-donts div:hover {
+    transform: scale(1.05);
+}
+
+/* Do's and Don'ts */
+.lower-body-women-dos-donts h4 {
+    font-size: 1.4rem;
+    color: #a94494;
+    margin-bottom: 10px;
+}
+
+.lower-body-women-dos-donts ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.lower-body-women-dos-donts li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Hover Effects */
+.lower-body-women-list li:hover {
+    color: #cc66ff;
+}
+
+.lower-body-women-dos-donts li:hover {
+    color: #cc66ff;
+}
+
+/* Buttons */
+.lower-body-women-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #aa66cc;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lower-body-women-btn:hover {
+    background-color: #cc88ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .lower-body-women-videos {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lower-body-women-dos-donts {
+        flex-direction: column;
+    }
+
+    .lower-body-women-video iframe {
+        height: 250px;
+    }
+}

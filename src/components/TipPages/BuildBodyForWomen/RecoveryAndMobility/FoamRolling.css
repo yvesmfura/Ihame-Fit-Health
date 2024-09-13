@@ -1,0 +1,122 @@
+/* Container */
+.foam-rolling-women-container {
+    background-color: #fdf3fb;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+.foam-rolling-women-container:hover {
+    background-color: #fce4f5;
+    transform: scale(1.02);
+}
+
+/* Title */
+.foam-rolling-women-title {
+    font-size: 2.5rem;
+    color: #e14d85;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.foam-rolling-women-title:hover {
+    color: #c03a6b;
+}
+
+/* Subheading */
+.foam-rolling-women-subheading {
+    font-size: 1.8rem;
+    color: #e14d85;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-left: 5px solid #e14d85;
+    padding-left: 10px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.foam-rolling-women-subheading:hover {
+    color: #c03a6b;
+    border-color: #c03a6b;
+}
+
+/* Text */
+.foam-rolling-women-text {
+    font-size: 1.15rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+/* Workout Plan List */
+.foam-rolling-women-plan {
+    margin: 20px 0;
+    padding-left: 20px;
+    list-style-type: decimal;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Do's and Don'ts / Health Tips List */
+.foam-rolling-women-list {
+    margin: 25px 0;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.foam-rolling-women-list li {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+    color: #444;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.foam-rolling-women-list li:hover {
+    color: #e14d85;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .foam-rolling-women-container {
+        padding: 30px;
+    }
+
+    .foam-rolling-women-title {
+        font-size: 2rem;
+    }
+
+    .foam-rolling-women-subheading {
+        font-size: 1.5rem;
+    }
+
+    .foam-rolling-women-text,
+    .foam-rolling-women-list li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .foam-rolling-women-container {
+        padding: 20px;
+    }
+
+    .foam-rolling-women-title {
+        font-size: 1.8rem;
+    }
+
+    .foam-rolling-women-subheading {
+        font-size: 1.3rem;
+    }
+
+    .foam-rolling-women-text,
+    .foam-rolling-women-list li {
+        font-size: 0.95rem;
+    }
+}

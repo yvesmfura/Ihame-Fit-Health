@@ -1,0 +1,133 @@
+/* AgilityDrills.css */
+
+.agility-drills-women-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdf7ff; /* Light feminine background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+    transition: all 0.3s ease;
+}
+
+.agility-drills-women-container h2 {
+    font-size: 2.2rem;
+    color: #e75480; /* Soft pink to appeal to women */
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.agility-drills-women-container h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.agility-drills-women-container p, 
+.agility-drills-women-container ul {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8; /* More line spacing for readability */
+}
+
+.agility-drills-women-container ul {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+.agrility-drills-women-workout ul,
+.agrility-drills-women-dos-donts ul, 
+.agrility-drills-women-health-tips ul {
+    margin-bottom: 25px;
+}
+
+.agrility-drills-women-workout ul li, 
+.agrility-drills-women-health-tips ul li {
+    margin-bottom: 12px;
+}
+
+.agrility-drills-women-dos-donts ul li {
+    margin-bottom: 10px;
+    color: #4caf50; /* Green for positivity */
+}
+
+.agrility-drills-women-dos-donts ul li strong {
+    color: #d9534f; /* Red for don'ts */
+}
+
+.agility-drills-women-container h3::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e75480;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.agility-drills-women-container ul li strong {
+    color: #e75480;
+}
+
+/* Video frame styling */
+.agrility-drills-women-video-frame {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.agrility-drills-women-video-frame iframe {
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the video */
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.agrility-drills-women-video-frame iframe:hover {
+    transform: scale(1.03); /* Small scale on hover for interaction */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .agility-drills-women-container {
+        padding: 15px;
+    }
+
+    .agility-drills-women-container h2 {
+        font-size: 1.9rem;
+    }
+
+    .agility-drills-women-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .agility-drills-women-container p, 
+    .agility-drills-women-container ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .agility-drills-women-container {
+        padding: 10px;
+    }
+
+    .agility-drills-women-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .agility-drills-women-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .agility-drills-women-container p, 
+    .agility-drills-women-container ul {
+        font-size: 0.9rem;
+    }
+
+    .agrility-drills-women-video-frame iframe {
+        width: 100%;
+        height: auto;
+    }
+}

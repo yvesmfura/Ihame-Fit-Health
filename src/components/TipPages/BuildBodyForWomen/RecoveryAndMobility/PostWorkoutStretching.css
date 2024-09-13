@@ -1,0 +1,105 @@
+/* Main container styling */
+.post-workout-stretching-men-container {
+    padding: 20px;
+    background-color: #ffe4e1; /* Soft pink background */
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post-workout-stretching-men-container:hover {
+    transform: scale(1.02);
+}
+
+/* Title and description */
+.post-workout-stretching-men-title {
+    font-size: 30px;
+    color: #d21f3c; /* Feminine red */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.post-workout-stretching-men-title:hover {
+    color: #b0172c;
+}
+
+.post-workout-stretching-men-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Subheadings */
+.post-workout-stretching-men-subheading {
+    font-size: 24px;
+    color: #d21f3c;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Lists */
+.post-workout-stretching-men-list, 
+.post-workout-stretching-men-plan, 
+.post-workout-stretching-men-dos-donts, 
+.post-workout-stretching-men-tips {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.post-workout-stretching-men-list li, 
+.post-workout-stretching-men-plan li, 
+.post-workout-stretching-men-dos-donts li, 
+.post-workout-stretching-men-tips li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+.post-workout-stretching-men-list li:hover, 
+.post-workout-stretching-men-plan li:hover, 
+.post-workout-stretching-men-dos-donts li:hover, 
+.post-workout-stretching-men-tips li:hover {
+    background-color: #ffcccb; /* Light pink on hover */
+}
+
+/* Plan list */
+.post-workout-stretching-men-plan li strong {
+    font-size: 18px;
+    color: #b0172c; /* Darker feminine red */
+}
+
+/* Sub-lists */
+.post-workout-stretching-men-plan ul, 
+.post-workout-stretching-men-dos-donts ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* Video section */
+.post-workout-stretching-men-video-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.post-workout-stretching-men-video {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.post-workout-stretching-men-video:hover {
+    transform: scale(1.03);
+}
+
+/* Miscellaneous */
+.post-workout-stretching-men-tips li strong {
+    color: #d21f3c;
+}

@@ -1,0 +1,201 @@
+/* General Container */
+.leg-toning-women-container {
+  padding: 40px;
+  background-color: #faf8fc;
+  color: #333;
+  font-family: 'Helvetica Neue', sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: background-color 0.3s ease;
+}
+
+.leg-toning-women-container:hover {
+  background-color: #f0ebf8;
+}
+
+/* Title Styling */
+.leg-toning-women-title {
+  font-size: 3rem;
+  color: #7038b3;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.4s ease;
+}
+
+.leg-toning-women-title:hover {
+  color: #562d91;
+}
+
+/* Subtitle Styling */
+.leg-toning-women-subtitle {
+  font-size: 2.2rem;
+  color: #7038b3;
+  margin-bottom: 25px;
+  border-left: 6px solid #562d91;
+  padding-left: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+.leg-toning-women-subtitle:hover {
+  color: #482176;
+  border-color: #3a195f;
+}
+
+/* Text Content */
+.leg-toning-women-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.leg-toning-women-text strong {
+  color: #333;
+}
+
+/* Section Styling */
+.leg-toning-women-section {
+  margin-bottom: 45px;
+}
+
+/* List Styling */
+.leg-toning-women-list {
+  padding-left: 25px;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.leg-toning-women-list li {
+  margin-bottom: 12px;
+  list-style-type: disc;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.leg-toning-women-list li:hover {
+  transform: translateX(12px);
+  color: #7038b3;
+}
+
+/* Do's and Don'ts Styling */
+.leg-toning-women-dos-donts {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.leg-toning-women-dos-donts div {
+  width: 48%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leg-toning-women-dos-donts div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.leg-toning-women-dos-donts h4 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #562d91;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.leg-toning-women-dos-donts ul {
+  padding-left: 25px;
+}
+
+.leg-toning-women-dos-donts li {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* Video Section */
+.leg-toning-women-video {
+  width: 100%;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.leg-toning-women-video iframe {
+  width: 100%;
+  max-width: 850px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+.leg-toning-women-video iframe:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.leg-toning-women-video p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+.leg-toning-women-video:hover p {
+  color: #7038b3;
+}
+
+/* Button Styling */
+.leg-toning-women-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #7038b3;
+  border-radius: 6px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.leg-toning-women-btn:hover {
+  background-color: #562d91;
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .leg-toning-women-container {
+      padding: 25px;
+  }
+
+  .leg-toning-women-title {
+      font-size: 2.4rem;
+  }
+
+  .leg-toning-women-subtitle {
+      font-size: 1.9rem;
+  }
+
+  .leg-toning-women-text {
+      font-size: 1.1rem;
+  }
+
+  .leg-toning-women-dos-donts div {
+      width: 100%;
+  }
+
+  .leg-toning-women-video iframe {
+      height: 350px;
+  }
+}

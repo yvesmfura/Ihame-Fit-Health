@@ -1,0 +1,118 @@
+/* BalanceAndCoordinationWomen.css */
+
+.balance-and-coordination-women-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fdf7ff; /* Light and feminine color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-and-coordination-women-container h2 {
+    font-size: 2.2rem;
+    color: #e75480; /* Pink shade for women */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance-and-coordination-women-container h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.balance-and-coordination-women-container p,
+.balance-and-coordination-women-container ul {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.balance-and-coordination-women-container ul {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+.balance-and-coordination-women-importance li,
+.balance-and-coordination-women-workout li,
+.balance-and-coordination-women-dos-donts li,
+.balance-and-coordination-women-health-tips li {
+    margin-bottom: 12px;
+}
+
+.balance-and-coordination-women-dos-donts li strong {
+    color: #e75480; /* Pink color for emphasis */
+}
+
+.balance-and-coordination-women-container h3::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #e75480;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+/* Video frame styling */
+.balance-and-coordination-women-video-frame {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.balance-and-coordination-women-video-frame iframe {
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Soft shadow around the video */
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.balance-and-coordination-women-video-frame iframe:hover {
+    transform: scale(1.03); /* Small scale on hover for interaction */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .balance-and-coordination-women-container {
+        padding: 15px;
+    }
+
+    .balance-and-coordination-women-container h2 {
+        font-size: 1.9rem;
+    }
+
+    .balance-and-coordination-women-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .balance-and-coordination-women-container p,
+    .balance-and-coordination-women-container ul {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .balance-and-coordination-women-container {
+        padding: 10px;
+    }
+
+    .balance-and-coordination-women-container h2 {
+        font-size: 1.6rem;
+    }
+
+    .balance-and-coordination-women-container h3 {
+        font-size: 1.2rem;
+    }
+
+    .balance-and-coordination-women-container p,
+    .balance-and-coordination-women-container ul {
+        font-size: 0.9rem;
+    }
+
+    .balance-and-coordination-women-video-frame iframe {
+        width: 100%;
+        height: auto;
+    }
+}
