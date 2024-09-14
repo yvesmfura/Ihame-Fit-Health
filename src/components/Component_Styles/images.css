@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1200px; /* Control the max width for larger screens */
   margin: 0 auto; /* Center the slider horizontally */
-  margin-top: -50px;
+  margin-top: -40px;
   padding: 0;
   overflow: hidden; /* Hide overflow for a cleaner look */
   position: relative; /* Position context for any overlay elements */
