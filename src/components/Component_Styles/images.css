@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1200px; /* Control the max width for larger screens */
   margin: 0 auto; /* Center the slider horizontally */
+  margin-top: -50px;
   padding: 0;
   overflow: hidden; /* Hide overflow for a cleaner look */
   position: relative; /* Position context for any overlay elements */
@@ -39,13 +40,23 @@
     aspect-ratio: 16 / 9; /* Adjusted to maintain 16:9 aspect ratio for different screen widths */
   }
 
-  .image-slider-wrapper {
-    margin-top: -50px; /* Remove top margin for smaller screens */
-}
 
 @media (max-width: 480px) {
   .slick-slide img {
     aspect-ratio: 16 / 9; /* Adjusted to maintain 16:9 aspect ratio for different screen widths */
   }
 }
+}
+
+@media only screen and (min-width: 724px) and (max-width: 1024px) {
+  .image-slider-wrapper {
+    margin-top: 10px;
+  }
+}
+
+/* Media query for devices with exactly 768x1024 resolution */
+@media only screen and (min-width: 768px) and (max-width: 768px) and (min-height: 1024px) and (max-height: 1024px) {
+  .image-slider-wrapper {
+    margin-top: -30px;
+  }
 }
