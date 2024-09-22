@@ -46,7 +46,7 @@ const UpperBodyMen: React.FC = () => {
                     title="30 Minute Upper Body Workout for Men"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+                    src="https://www.youtube.com/embed/30c8d9smbsE?si=Yv7MExbdIpKU8E9m"
                     frameBorder="0"
                     allowFullScreen
                 ></iframe>

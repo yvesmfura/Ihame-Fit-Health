@@ -53,6 +53,20 @@ const FoamRollingWomen: React.FC = () => {
                 <li>Combine foam rolling with stretching and mobility exercises to maximize benefits.</li>
                 <li>Make foam rolling part of your post-workout routine for optimal results.</li>
             </ul>
+
+            <div className="post-workout-stretching-women-video-section">
+                <h3 className="post-workout-stretching-women-subheading">Watch a Post-Workout Stretching Routine</h3>
+                <iframe
+                    className="post-workout-stretching-women-video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/H_71YGXBt8g?si=4MM36s6whx7cBEeG"
+                    title="foam rolling women Routine"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                ></iframe>
+            </div>
         </div>
     );
 };

@@ -58,7 +58,7 @@ const DynamicWarmUpsWomen: React.FC = () => {
                 <h3 className="Dynamic-Warmup-Women-subtitle">Watch This Warm-Up Routine</h3>
                 <iframe
                     title="Dynamic Warm-Up Routine"
-                    src="https://www.youtube.com/embed/your-video-id" /* Replace with your video ID */
+                    src="https://www.youtube.com/embed/LKSC_KujZ4g?si=aNC4bOHLLDTNoiy-"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

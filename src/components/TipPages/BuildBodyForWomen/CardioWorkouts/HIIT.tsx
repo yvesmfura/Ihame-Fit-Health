@@ -53,7 +53,7 @@ const HIITWomen: React.FC = () => {
                     <iframe
                         width="560"
                         height="315"
-                        src="https://www.youtube.com/embed/your-video-id"
+                        src="https://www.youtube.com/embed/jqUGUYpxQ7U?si=Fn0CWlt84vwPErMF"
                         title="HIIT Workout Guide"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

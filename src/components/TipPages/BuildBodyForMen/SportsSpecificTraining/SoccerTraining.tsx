@@ -70,7 +70,7 @@ const SoccerTrainingMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
+                    src="https://www.youtube.com/embed/CgJQkwlHo7Y?si=jNYjL0cemHDZRoo7"
                     title="Soccer Training Techniques for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

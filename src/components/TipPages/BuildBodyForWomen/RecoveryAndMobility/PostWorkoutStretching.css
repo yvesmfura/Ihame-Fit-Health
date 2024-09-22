@@ -1,19 +1,21 @@
 /* Main container styling */
-.post-workout-stretching-men-container {
-    padding: 20px;
-    background-color: #ffe4e1; /* Soft pink background */
-    font-family: 'Helvetica', sans-serif;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+.post-workout-stretching-women-container {
+    background-color: #faf6ff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: background-color 0.4s ease, transform 0.3s ease;
 }
 
-.post-workout-stretching-men-container:hover {
+.post-workout-stretching-women-container:hover {
     transform: scale(1.02);
 }
 
 /* Title and description */
-.post-workout-stretching-men-title {
+.post-workout-stretching-women-title {
     font-size: 30px;
     color: #d21f3c; /* Feminine red */
     text-align: center;
@@ -22,11 +24,11 @@
     transition: color 0.3s ease;
 }
 
-.post-workout-stretching-men-title:hover {
+.post-workout-stretching-women-title:hover {
     color: #b0172c;
 }
 
-.post-workout-stretching-men-description {
+.post-workout-stretching-women-description {
     font-size: 18px;
     color: #555;
     margin-bottom: 20px;
@@ -35,7 +37,7 @@
 }
 
 /* Subheadings */
-.post-workout-stretching-men-subheading {
+.post-workout-stretching-women-subheading {
     font-size: 24px;
     color: #d21f3c;
     margin-top: 20px;
@@ -44,62 +46,62 @@
 }
 
 /* Lists */
-.post-workout-stretching-men-list, 
-.post-workout-stretching-men-plan, 
-.post-workout-stretching-men-dos-donts, 
-.post-workout-stretching-men-tips {
+.post-workout-stretching-women-list, 
+.post-workout-stretching-women-plan, 
+.post-workout-stretching-women-dos-donts, 
+.post-workout-stretching-women-tips {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.post-workout-stretching-men-list li, 
-.post-workout-stretching-men-plan li, 
-.post-workout-stretching-men-dos-donts li, 
-.post-workout-stretching-men-tips li {
+.post-workout-stretching-women-list li, 
+.post-workout-stretching-women-plan li, 
+.post-workout-stretching-women-dos-donts li, 
+.post-workout-stretching-women-tips li {
     margin-bottom: 10px;
     font-size: 16px;
     color: #555;
     transition: background-color 0.3s ease;
 }
 
-.post-workout-stretching-men-list li:hover, 
-.post-workout-stretching-men-plan li:hover, 
-.post-workout-stretching-men-dos-donts li:hover, 
-.post-workout-stretching-men-tips li:hover {
+.post-workout-stretching-women-list li:hover, 
+.post-workout-stretching-women-plan li:hover, 
+.post-workout-stretching-women-dos-donts li:hover, 
+.post-workout-stretching-women-tips li:hover {
     background-color: #ffcccb; /* Light pink on hover */
 }
 
 /* Plan list */
-.post-workout-stretching-men-plan li strong {
+.post-workout-stretching-women-plan li strong {
     font-size: 18px;
     color: #b0172c; /* Darker feminine red */
 }
 
 /* Sub-lists */
-.post-workout-stretching-men-plan ul, 
-.post-workout-stretching-men-dos-donts ul {
+.post-workout-stretching-women-plan ul, 
+.post-workout-stretching-women-dos-donts ul {
     margin-left: 20px;
     list-style-type: disc;
 }
 
 /* Video section */
-.post-workout-stretching-men-video-section {
+.post-workout-stretching-women-video-section {
     margin-top: 30px;
     text-align: center;
 }
 
-.post-workout-stretching-men-video {
+.post-workout-stretching-women-video {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.post-workout-stretching-men-video:hover {
+.post-workout-stretching-women-video:hover {
     transform: scale(1.03);
 }
 
 /* Miscellaneous */
-.post-workout-stretching-men-tips li strong {
+.post-workout-stretching-women-tips li strong {
     color: #d21f3c;
 }

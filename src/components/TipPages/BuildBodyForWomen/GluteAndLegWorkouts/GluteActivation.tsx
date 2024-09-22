@@ -91,7 +91,7 @@ const GluteActivationWomen: React.FC = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/example_fitness"
+              src="https://www.youtube.com/embed/zpO4fCquXRk?si=oQniG9L8agccmoIw"
               title="Glute Activation for Fitness"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -105,7 +105,7 @@ const GluteActivationWomen: React.FC = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/example_aesthetic"
+              src="https://www.youtube.com/embed/JW2HIBCgTcg?si=qzvXv5Oe6Hz3Ubwd"
               title="Glute Activation for Aesthetic"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -62,8 +62,8 @@ const EverydayStrengthWomen: React.FC = () => {
                     <iframe 
                         width="560" 
                         height="315" 
-                        src="https://www.youtube.com/embed/SAMPLE_VIDEO" 
-                        title="Agility Drills for Women" 
+                        src="https://www.youtube.com/embed/jeLxN-wt7jY?si=5N2TBvFZr2PfyVMf"
+                        title="Every day strength for Women" 
                         frameBorder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen

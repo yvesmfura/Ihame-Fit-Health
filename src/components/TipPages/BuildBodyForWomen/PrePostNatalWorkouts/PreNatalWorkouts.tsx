@@ -115,7 +115,7 @@ const PreNatalWorkoutsWomen: React.FC = () => {
                         className="prenatal-workout-women-video"
                         width="560" 
                         height="315" 
-                        src="https://www.youtube.com/embed/example1" 
+                        src="https://www.youtube.com/embed/eyjyOKN9a4I?si=pLZCmfnm0OnudIYG" 
                         title="Pre-Natal Yoga" 
                         allowFullScreen
                     ></iframe>

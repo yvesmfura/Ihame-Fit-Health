@@ -64,7 +64,7 @@ const JumpRopeMen: React.FC = () => {
                     <iframe
                         width="560"
                         height="315"
-                        src="https://www.youtube.com/embed/your-video-id"
+                        src="https://www.youtube.com/embed/D9UxBKoPC7s?si=XFlOS0kjChYDP9OM"
                         title="Jump Rope Workout Guide"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

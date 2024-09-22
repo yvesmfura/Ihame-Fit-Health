@@ -44,7 +44,7 @@ const BalanceCoordinationMen: React.FC = () => {
             <h3>Video Guide</h3>
             <div className="balance-coordination-men-video">
                 <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    src="https://www.youtube.com/embed/GiJsMopIGoE?si=kinML62QaURpocNM"
                     title="Balance and Coordination Workout for Men" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

@@ -73,7 +73,7 @@ const GluteActivationMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
+                    src="https://www.youtube.com/embed/GHBVM3P63ds?si=0CU8tSapG9iB2bte"
                     title="Glute Activation Workout for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

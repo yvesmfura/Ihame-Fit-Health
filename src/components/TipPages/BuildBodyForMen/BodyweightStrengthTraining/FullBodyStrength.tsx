@@ -49,7 +49,7 @@ const FullBodyStrengthMen: React.FC = () => {
                     title="30 Minute Full Body Workout for Men"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+                    src="https://www.youtube.com/embed/Auo8veVyRIY?si=MKd6fe1ohUL4SyAr"
                     frameBorder="0"
                     allowFullScreen
                 ></iframe>

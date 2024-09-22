@@ -73,7 +73,7 @@ const CoreStabilityMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/your-video-id"
+                    src="https://www.youtube.com/embed/n8UU10ho8Ps?si=LBeuGRvma93m7PQT"
                     title="Core Stability Workouts for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

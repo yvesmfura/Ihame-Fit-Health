@@ -72,7 +72,7 @@ const PostNatalWorkoutsWomen: React.FC = () => {
                         className="post-natal-workouts-women-video"
                         width="560" 
                         height="315" 
-                        src="https://www.youtube.com/embed/example2" 
+                        src="https://www.youtube.com/embed/8waEzAZSuwk?si=7Q6qkHTnSCQ3BngX" 
                         title="Post-Natal Yoga" 
                         allowFullScreen
                     ></iframe>

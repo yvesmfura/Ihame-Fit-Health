@@ -57,7 +57,7 @@ const LowerAbsWomen: React.FC = () => {
                     className="lower-abs-women-video-frame"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/your-video-url"
+                    src="https://www.youtube.com/embed/7-mVPCVJMtI?si=iPToSMqRuS4A1Fo-"
                     title="Lower Abs Workout Video"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

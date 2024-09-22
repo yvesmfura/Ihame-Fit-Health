@@ -91,7 +91,7 @@ const AbCircuitsWomen: React.FC = () => {
                     className="ab-circuit-women-video-frame"
                     width="100%"
                     height="400"
-                    src="https://www.youtube.com/embed/VIDEO_ID"  // Replace VIDEO_ID with actual video link
+                    src="https://www.youtube.com/embed/5i8y-_cbwgw?si=FbAV8hPXjz9hjZws"
                     title="Ab Circuit Workout for Women"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

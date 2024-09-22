@@ -67,7 +67,7 @@ const LowerBodyWomen: React.FC = () => {
             <section className="lower-body-women-video-section">
                 <h3>Guidance Video</h3>
                 <iframe 
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                    src="https://www.youtube.com/embed/Yx0BW-H5W0Y?si=cxTZOv94ihvQtByE" 
                     title="Lower Body Workout Guidance"
                     allowFullScreen
                     className="lower-body-women-video"

@@ -35,7 +35,7 @@ const RelaxationTechniquesWomen: React.FC = () => {
                     className="relaxation-techniques-women-video"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/someVideoID"
+                    src="https://www.youtube.com/embed/9MazN_6wdqI?si=bV8K1lBZvhqEfhqM"
                     title="Guided Meditation"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

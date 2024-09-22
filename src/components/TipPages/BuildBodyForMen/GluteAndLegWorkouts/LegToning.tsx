@@ -46,7 +46,7 @@ const LegToningMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
+                    src="https://www.youtube.com/embed/CnfitL4Rl0o?si=9aqwAWqCq1pWCTGS"
                     title="Leg Toning Workout for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -80,7 +80,7 @@ const StretchingMen: React.FC = () => {
                 <h3 className="stretching-men-subtitle">Stretching Routine Video</h3>
                 <iframe 
                     className="stretching-men-video-frame"
-                    src="https://www.youtube.com/embed/your-video-id" 
+                    src="https://www.youtube.com/embed/hNCqIgl7Pjc?si=xMPcce-33uU4Mdqx" 
                     title="Stretching Routine Video" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

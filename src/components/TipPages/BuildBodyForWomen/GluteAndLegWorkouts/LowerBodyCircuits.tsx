@@ -67,7 +67,7 @@ const LowerBodyCircuitsWomen: React.FC = () => {
         <div className="lower-body-women-video">
           <h4>Lower Body Circuit for Fitness</h4>
           <iframe
-            src="https://www.youtube.com/embed/fitness-video-link"
+            src="https://www.youtube.com/embed/k6kZTMsBzTk?si=t4VfnPs57B5rHQSz"
             title="Lower Body Fitness Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -78,7 +78,7 @@ const LowerBodyCircuitsWomen: React.FC = () => {
         <div className="lower-body-women-video">
           <h4>Lower Body Circuit for Aesthetics</h4>
           <iframe
-            src="https://www.youtube.com/embed/aesthetic-video-link"
+            src="https://www.youtube.com/embed/JW2HIBCgTcg?si=805s0OSRkgvlCO7c"
             title="Lower Body Aesthetic Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

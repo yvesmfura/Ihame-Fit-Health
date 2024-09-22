@@ -91,7 +91,7 @@ const LegToningWomen: React.FC = () => {
                     <iframe
                         width="560"
                         height="315"
-                        src="https://www.youtube.com/embed/example_leg_toning"
+                        src="https://www.youtube.com/embed/Yx0BW-H5W0Y?si=FbYbQMJWbg-aEoaZ"
                         title="Leg Toning Workout for Women"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

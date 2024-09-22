@@ -40,7 +40,7 @@ const AgilityDrillsMen: React.FC = () => {
             <h3>Video Guide</h3>
             <div className="agility-drills-men-video">
                 <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    src="https://www.youtube.com/embed/skSLNiEX-H8?si=mGwmQnEeCXeesngo"
                     title="Agility Drills for Men" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

@@ -32,7 +32,7 @@ const EverydayStrengthMen: React.FC = () => {
             <h3>Video Guide</h3>
             <div className="everyday-strength-men-video">
                 <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    src="https://www.youtube.com/embed/9FBIaqr7TjQ?si=C4StvPW95XhlX3Jx"
                     title="Everyday Strength Workouts for Men" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

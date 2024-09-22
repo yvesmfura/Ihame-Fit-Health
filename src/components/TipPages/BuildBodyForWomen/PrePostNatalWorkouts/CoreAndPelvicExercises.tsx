@@ -133,7 +133,7 @@ const CoreAndPelvicExercisesWomen: React.FC = () => {
                         className="core-and-pelvic-exercises-women-video-frame"
                         width="560" 
                         height="315" 
-                        src="https://www.youtube.com/embed/example-prenatal" 
+                        src="https://www.youtube.com/embed/4xH3DCHFyOo?si=5kArd72T0MqGXt3j"
                         title="Prenatal Core Exercises" 
                         allowFullScreen
                     ></iframe>
@@ -143,7 +143,7 @@ const CoreAndPelvicExercisesWomen: React.FC = () => {
                         className="core-and-pelvic-exercises-women-video-frame"
                         width="560" 
                         height="315" 
-                        src="https://www.youtube.com/embed/example-postnatal" 
+                        src="https://www.youtube.com/embed/qn_hUX_QP7I?si=eXDhqm55mFc2RCcH"
                         title="Postnatal Core Exercises" 
                         allowFullScreen
                     ></iframe>

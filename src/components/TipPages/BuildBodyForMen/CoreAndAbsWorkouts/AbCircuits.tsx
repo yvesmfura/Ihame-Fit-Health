@@ -66,7 +66,7 @@ const AbCircuitsMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/your-video-id"
+                    src="https://www.youtube.com/embed/P1mInEK7BEU?si=F9TCjJ6SYbTxcqkC"
                     title="Ab Circuit Workout for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

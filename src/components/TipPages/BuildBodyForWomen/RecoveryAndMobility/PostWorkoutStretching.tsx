@@ -3,22 +3,22 @@ import './PostWorkoutStretching.css';
 
 const PostWorkoutStretchingWomen: React.FC = () => {
     return (
-        <div className="post-workout-stretching-men-container">
-            <h2 className="post-workout-stretching-men-title">Post-Workout Stretching for Women</h2>
-            <p className="post-workout-stretching-men-description">
+        <div className="post-workout-stretching-women-container">
+            <h2 className="post-workout-stretching-women-title">Post-Workout Stretching for Women</h2>
+            <p className="post-workout-stretching-women-description">
                 Cool down and aid muscle recovery with these post-workout stretching routines. Post-workout stretching helps improve flexibility, prevent injury, and reduce muscle soreness.
             </p>
             
-            <h3 className="post-workout-stretching-men-subheading">Importance of Post-Workout Stretching</h3>
-            <ul className="post-workout-stretching-men-list">
+            <h3 className="post-workout-stretching-women-subheading">Importance of Post-Workout Stretching</h3>
+            <ul className="post-workout-stretching-women-list">
                 <li><strong>Reduces Muscle Soreness:</strong> Stretching after exercise helps to release tension in your muscles and reduce the likelihood of soreness.</li>
                 <li><strong>Improves Flexibility:</strong> Regular stretching increases your flexibility over time, which is essential for overall fitness and joint health.</li>
                 <li><strong>Prevents Injury:</strong> Stretching helps to elongate the muscles and reduce the risk of injury by promoting better blood circulation and muscle recovery.</li>
                 <li><strong>Enhances Relaxation:</strong> Stretching post-workout can trigger relaxation responses in the body, lowering stress levels.</li>
             </ul>
 
-            <h3 className="post-workout-stretching-men-subheading">30-Minute Post-Workout Stretching Plan</h3>
-            <ul className="post-workout-stretching-men-plan">
+            <h3 className="post-workout-stretching-women-subheading">30-Minute Post-Workout Stretching Plan</h3>
+            <ul className="post-workout-stretching-women-plan">
                 <li><strong>5 Minutes: Upper Body Stretch</strong>
                     <ul>
                         <li>Neck stretch (30 seconds per side)</li>
@@ -52,8 +52,8 @@ const PostWorkoutStretchingWomen: React.FC = () => {
                 </li>
             </ul>
 
-            <h3 className="post-workout-stretching-men-subheading">Do's and Don'ts of Post-Workout Stretching</h3>
-            <ul className="post-workout-stretching-men-dos-donts">
+            <h3 className="post-workout-stretching-women-subheading">Do's and Don'ts of Post-Workout Stretching</h3>
+            <ul className="post-workout-stretching-women-dos-donts">
                 <li><strong>Do:</strong>
                     <ul>
                         <li>Hold each stretch for at least 30 seconds to ensure proper muscle elongation.</li>
@@ -70,8 +70,8 @@ const PostWorkoutStretchingWomen: React.FC = () => {
                 </li>
             </ul>
 
-            <h3 className="post-workout-stretching-men-subheading">Health and Lifestyle Tips</h3>
-            <ul className="post-workout-stretching-men-tips">
+            <h3 className="post-workout-stretching-women-subheading">Health and Lifestyle Tips</h3>
+            <ul className="post-workout-stretching-women-tips">
                 <li><strong>Stay Hydrated:</strong> Drink water before and after your workout to maintain hydration levels, which helps with muscle recovery.</li>
                 <li><strong>Balanced Diet:</strong> Ensure your post-workout meals contain a good mix of protein and carbohydrates to support muscle repair and energy replenishment.</li>
                 <li><strong>Get Enough Sleep:</strong> Aim for 7-9 hours of sleep each night to allow your body to fully recover.</li>
@@ -79,13 +79,13 @@ const PostWorkoutStretchingWomen: React.FC = () => {
                 <li><strong>Mental Relaxation:</strong> Incorporate mindfulness practices, such as meditation or yoga, to reduce stress and enhance recovery.</li>
             </ul>
 
-            <div className="post-workout-stretching-men-video-section">
-                <h3 className="post-workout-stretching-men-subheading">Watch a Post-Workout Stretching Routine</h3>
+            <div className="post-workout-stretching-women-video-section">
+                <h3 className="post-workout-stretching-women-subheading">Watch a Post-Workout Stretching Routine</h3>
                 <iframe
-                    className="post-workout-stretching-men-video"
+                    className="post-workout-stretching-women-video"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/someVideoID"
+                    src="https://www.youtube.com/embed/dhFCO37us7w?si=xWVpDXxJURW1fSQX"
                     title="Post-Workout Stretching Routine"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -80,7 +80,7 @@
 .dynamic-warm-ups-men-container .dynamic-warm-ups-men-video {
     width: 100%;
     max-width: 720px;
-    height: auto;
+    height: 480;
 }
 
 /* Buttons for Interactions */

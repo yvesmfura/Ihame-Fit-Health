@@ -71,7 +71,7 @@ const RelaxationTechniquesMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
+                    src="https://www.youtube.com/embed/8lkJi4ldZ90?si=IrKdFvqJbr9b5O6g"
                     title="Relaxation Techniques for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

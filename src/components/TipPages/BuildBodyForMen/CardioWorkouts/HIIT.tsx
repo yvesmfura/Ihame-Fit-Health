@@ -62,9 +62,7 @@ const HIITMen: React.FC = () => {
                 <p>Watch this video for detailed instructions on performing each exercise correctly.</p>
                 <div className="cardio-hiit-men-video-container">
                     <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/your-video-id"
+                        src="https://www.youtube.com/embed/_KOBx1fIjfs?si=s4k-OCSCNrqkVSiU"
                         title="HIIT Workout Guide"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

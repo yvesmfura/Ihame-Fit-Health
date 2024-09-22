@@ -84,7 +84,7 @@ const CoreStabilityWomen: React.FC = () => {
                     className="core-stability-women-video-frame"
                     width="100%"
                     height="400"
-                    src="https://www.youtube.com/embed/VIDEO_ID"  // Replace VIDEO_ID with actual video link
+                    src="https://www.youtube.com/embed/eAi7EAE6-cU?si=uR_4eg8z82UgcYvj"
                     title="Core Stability Workout for Women"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

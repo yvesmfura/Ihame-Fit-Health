@@ -71,7 +71,7 @@ const FoamRollingMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
+                    src="https://www.youtube.com/embed/p7_SSgyUj88?si=MjYsUHXHleIp3K_D"
                     title="Foam Rolling Techniques for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

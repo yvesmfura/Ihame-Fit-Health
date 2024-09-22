@@ -70,7 +70,7 @@ const YogaPilatesWomen: React.FC = () => {
                 <h3 className="YogaPilatesWomen-subtitle">Watch This Yoga and Pilates Routine</h3>
                 <iframe
                     title="Yoga and Pilates Routine"
-                    src="https://www.youtube.com/embed/your-video-id" /* Replace with your video ID */
+                   src="https://www.youtube.com/embed/NJU8dcCacRY?si=sAgM70oMMHu7FVEW"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

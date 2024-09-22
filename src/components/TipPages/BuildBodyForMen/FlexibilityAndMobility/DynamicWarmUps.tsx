@@ -64,8 +64,8 @@ const DynamicWarmUpsMen: React.FC = () => {
             <iframe 
                 className="dynamic-warm-ups-men-video"
                 width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/some-video-id" 
+                height="480" 
+                src="https://www.youtube.com/embed/vx5E9pKyNl8?si=jY0R7dotQ2oz7Ak-" 
                 title="Dynamic Warm-Up for Flexibility and Mobility" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

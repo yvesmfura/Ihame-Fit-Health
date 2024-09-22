@@ -50,7 +50,7 @@ const FullBodyStrengthWomen: React.FC = () => {
             <div className="full-body-strength-women-video-section">
                 <h3>Guidance Video</h3>
                 <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    src="https://www.youtube.com/embed/9FBIaqr7TjQ?si=alQiS8mxRmitcb4J"
                     title="Full Body Strength Workout Guide" 
                     allowFullScreen 
                 ></iframe>

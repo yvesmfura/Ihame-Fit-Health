@@ -83,7 +83,7 @@ const LowerBodyCircuitsMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
+                    src="https://www.youtube.com/embed/X0xt0fYTZv8?si=b2yxDnBD_kbeipS1"
                     title="Lower Body Circuits Workout for Men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

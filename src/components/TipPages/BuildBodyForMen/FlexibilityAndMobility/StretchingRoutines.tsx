@@ -36,7 +36,7 @@ const StretchingMen: React.FC = () => {
             <h3>Video Guide</h3>
             <div className="stretching-routines-men-video">
                 <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    src="https://www.youtube.com/embed/3TlJM9sOQGM?si=AhWC2oHgk-yPY6BU"
                     title="Stretching Routine for Men" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

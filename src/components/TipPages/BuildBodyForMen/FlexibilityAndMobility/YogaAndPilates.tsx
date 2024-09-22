@@ -34,7 +34,7 @@ const YogaPilatesMen: React.FC = () => {
             <h3>Video Guide</h3>
             <div className="yoga-pilates-men-video">
                 <iframe 
-                    src="https://www.youtube.com/embed/VIDEO_ID" 
+                    src="https://www.youtube.com/embed/SS3WT91y48I?si=PcdU-X5naxuCDzd5" 
                     title="Yoga and Pilates Workout for Men" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 

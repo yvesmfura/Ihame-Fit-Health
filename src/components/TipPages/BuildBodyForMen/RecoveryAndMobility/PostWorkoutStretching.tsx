@@ -72,8 +72,8 @@ const PostWorkoutStretchingMen: React.FC = () => {
                 <iframe
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/sampleVideoID"
-                    title="Post-Workout Stretching Routine"
+                    src="https://www.youtube.com/embed/wCUI1bwlJqA?si=mhks798fanYLCEfy"
+                    title="Post-Workout Stretching Routine for men"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen

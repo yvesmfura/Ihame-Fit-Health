@@ -51,7 +51,7 @@ const CardioCircuitsWomen: React.FC = () => {
                     <iframe
                         width="560"
                         height="315"
-                        src="https://www.youtube.com/embed/your-video-id"
+                        src="https://www.youtube.com/embed/tgm_QjUiwlk?si=udhoVrOYKseysWc8"
                         title="Cardio Circuit Workout Guide"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
