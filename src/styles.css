@@ -55,10 +55,10 @@ main {
 .header {
   background: linear-gradient(120deg, #ffca28, #3498db, #4caf50);
   color: white;
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: fixed; /* Make header fixed */
   width: 100%; /* Ensure it spans the full width */
+  padding-top: 10px;
   top: 0; /* Stick to the top */
   left: 0;
   z-index: 1000; /* Ensure it stays above other elements */
@@ -546,12 +546,12 @@ body {
   }
 
   .feature-cards {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
   .card {
-    max-width: 100%;
+    max-width:160px;
   }
 
   main {
