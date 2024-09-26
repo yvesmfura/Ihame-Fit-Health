@@ -3,15 +3,20 @@ import './Component_Styles/Workout.css';
 
 const Workout: React.FC = () => {
   const [userInput, setUserInput] = useState({
-    age: '',
     sex: '',
     bodyType: '',
     bodyPreference: '',
   });
 
-  const [suggestedWorkout, setSuggestedWorkout] = useState<{ workout: string[], description: string, dietTips: string, lifestyleTips: string } | null>(null);
+  const [suggestedWorkout, setSuggestedWorkout] = useState<{
+    workout: string[];
+    description: string;
+    dietTips: string;
+    lifestyleTips: string;
+  } | null>(null);
 
   const workoutResultRef = useRef<HTMLDivElement>(null);
+  const workoutTitleRef = useRef<HTMLHeadingElement>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -58,7 +63,7 @@ const Workout: React.FC = () => {
     let dietTips = '';
     let lifestyleTips = '';
     let workout: string[] = [];
-  
+
     switch (bodyPreference) {
       case 'leanEctomorph':
         description = 'You have a naturally slim frame and fast metabolism. Building muscle is key.';
@@ -74,7 +79,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Light Walk',
         ];
         break;
-  
+
       case 'athleticMesomorph':
         description = 'Naturally muscular, with a balanced physique. You can easily gain or lose muscle.';
         dietTips = 'Maintain a balanced diet with adequate protein for muscle recovery.';
@@ -89,7 +94,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Light Yoga',
         ];
         break;
-  
+
       case 'vShape':
         description = 'Broad shoulders and narrow waist, focusing on upper body strength and definition.';
         dietTips = 'Consume adequate protein for muscle building, and ensure calorie surplus.';
@@ -104,7 +109,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Light Walk',
         ];
         break;
-  
+
       case 'mesomorphEndomorph':
         description = 'A balanced blend of muscle and size. You have an easier time gaining muscle but need to manage fat.';
         dietTips = 'Maintain a balanced diet but watch your calorie intake to avoid fat gain.';
@@ -119,7 +124,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Active Recovery',
         ];
         break;
-  
+
       case 'shreddedPhysique':
         description = 'Focused on being lean with muscle definition. Maintaining low body fat is important.';
         dietTips = 'Consume high protein with low carbs and fats to maintain a calorie deficit.';
@@ -134,7 +139,7 @@ const Workout: React.FC = () => {
           'Day 7: Active Recovery or Rest',
         ];
         break;
-  
+
       case 'tonedHourglass':
         description = 'Curves with muscle. You want to maintain a slim waist and toned limbs.';
         dietTips = 'Consume lean proteins and healthy carbs to support muscle tone while avoiding fat gain.';
@@ -149,7 +154,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Light Walk',
         ];
         break;
-  
+
       case 'slimAthletic':
         description = 'Athletic physique with lean muscle tone. You want to stay slim but defined.';
         dietTips = 'Maintain a balanced diet with adequate protein and carbs for energy.';
@@ -164,7 +169,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Active Recovery',
         ];
         break;
-  
+
       case 'curvyPear':
         description = 'Curvier lower body with a focus on toning the upper body and slimming the waist.';
         dietTips = 'Consume balanced meals with a focus on protein to support muscle growth and fat loss.';
@@ -179,7 +184,7 @@ const Workout: React.FC = () => {
           'Day 7: Rest or Light Activity',
         ];
         break;
-  
+
       case 'fitHourglass':
         description = 'Balanced curves with fitness. You aim to maintain muscle tone and keep a slim waist.';
         dietTips = 'Maintain a balanced diet with enough protein to support muscle recovery.';
@@ -189,123 +194,116 @@ const Workout: React.FC = () => {
           'Day 2: Lower Body Strength',
           'Day 3: Core & Abs Focus',
           'Day 4: Rest Day',
-          'Day 5: Full-Body Strength Training',
+          'Day 5: Cardio (HIIT or Running)',
+          'Day 6: Full-Body Circuit Training',
+          'Day 7: Rest or Yoga',
+        ];
+        break;
+
+      case 'fitLeanApple':
+        description = 'You aim for a fit, lean look, focusing on toning your midsection.';
+        dietTips = 'Focus on lean proteins and vegetables to maintain a low body fat percentage.';
+        lifestyleTips = 'Incorporate full-body strength training with core-specific exercises.';
+        workout = [
+          'Day 1: Upper Body & Core Strength Training',
+          'Day 2: Lower Body Workout',
+          'Day 3: Cardio (Running or Cycling)',
+          'Day 4: Rest Day',
+          'Day 5: Core & Abs Circuit',
           'Day 6: HIIT Cardio',
           'Day 7: Rest or Light Yoga',
         ];
         break;
-  
-      case 'fitLeanApple':
-        description = 'Focused on maintaining a fit and lean body, especially slimming the midsection.';
-        dietTips = 'Focus on a low-carb, high-protein diet to stay lean and toned.';
-        lifestyleTips = 'Work on core exercises and cardio to keep fat off while maintaining muscle.';
-        workout = [
-          'Day 1: Core & Abs Workout',
-          'Day 2: Upper Body Strength Training',
-          'Day 3: Cardio (Running or Swimming)',
-          'Day 4: Rest Day',
-          'Day 5: Lower Body Strength Training',
-          'Day 6: HIIT Cardio',
-          'Day 7: Active Recovery or Rest',
-        ];
-        break;
-  
+
       default:
-        description = 'Select a valid body preference to get workout recommendations.';
-        workout = [];
+        description = 'No workout plan available for this body preference.';
         dietTips = '';
         lifestyleTips = '';
+        workout = [];
+        break;
     }
-  
-    setSuggestedWorkout({ workout, description, dietTips, lifestyleTips });
+
+    return { workout, description, dietTips, lifestyleTips };
   };
-  
-  
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    generateWorkoutPlan(userInput.bodyPreference);
+    const { bodyPreference } = userInput;
+    const result = generateWorkoutPlan(bodyPreference);
+    setSuggestedWorkout(result);
+
+    // Scroll to the title of the workout plan
+    workoutTitleRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="workout-container">
-      <h2>Create Your Personalized Workout Plan</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="sex" className="workout-label">Sex:</label>
-        <select
-          id="sex"
-          name="sex"
-          value={userInput.sex}
-          onChange={handleInputChange}
-          className="workout-select"
-          required
-        >
-          <option value="">Select your sex</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-
-        <label htmlFor="bodyType" className="workout-label">Body Type:</label>
-        <select
-          id="bodyType"
-          name="bodyType"
-          value={userInput.bodyType}
-          onChange={handleInputChange}
-          className="workout-select"
-          required
-        >
-          <option value="">Select your body type</option>
-          {userInput.sex === 'male'
-            ? maleBodyTypes.map(type => (
-                <option key={type.value} value={type.value}>
-                  {type.label}
-                </option>
-              ))
-            : femaleBodyTypes.map(type => (
-                <option key={type.value} value={type.value}>
-                  {type.label}
-                </option>
-              ))}
-        </select>
-
-        <label htmlFor="bodyPreference" className="workout-label">Body Preference:</label>
-        <select
-          id="bodyPreference"
-          name="bodyPreference"
-          value={userInput.bodyPreference}
-          onChange={handleInputChange}
-          className="workout-select"
-          required
-        >
-          <option value="">Select your body preference</option>
-          {userInput.sex === 'male'
-            ? maleBodyPreferences.map(pref => (
-                <option key={pref.value} value={pref.value}>
-                  {pref.label}
-                </option>
-              ))
-            : femaleBodyPreferences.map(pref => (
-                <option key={pref.value} value={pref.value}>
-                  {pref.label}
-                </option>
-              ))}
-        </select>
-
-        <button type="submit" className="workout-button">Generate Plan</button>
+    <div className="workout-plan-container">
+      <form className="workout-plan-form" onSubmit={handleSubmit}>
+        <label className="workout-plan-label">
+          Sex:
+          <select name="sex" value={userInput.sex} onChange={handleInputChange} required>
+            <option value="">Select your sex</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+        <label className="workout-plan-label">
+          Body Type:
+          <select name="bodyType" value={userInput.bodyType} onChange={handleInputChange} required>
+            <option value="">Select your body type</option>
+            {userInput.sex === 'male'
+              ? maleBodyTypes.map(bodyType => (
+                  <option key={bodyType.value} value={bodyType.value}>
+                    {bodyType.label}
+                  </option>
+                ))
+              : femaleBodyTypes.map(bodyType => (
+                  <option key={bodyType.value} value={bodyType.value}>
+                    {bodyType.label}
+                  </option>
+                ))}
+          </select>
+        </label>
+        <label className="workout-plan-label">
+          Body Preference:
+          <select
+            name="bodyPreference"
+            value={userInput.bodyPreference}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="">Select your body preference</option>
+            {userInput.sex === 'male'
+              ? maleBodyPreferences.map(preference => (
+                  <option key={preference.value} value={preference.value}>
+                    {preference.label}
+                  </option>
+                ))
+              : femaleBodyPreferences.map(preference => (
+                  <option key={preference.value} value={preference.value}>
+                    {preference.label}
+                  </option>
+                ))}
+          </select>
+        </label>
+        <button type="submit" className="workout-plan-button">
+          Generate Workout Plan
+        </button>
       </form>
 
       {suggestedWorkout && (
-        <div ref={workoutResultRef} className="workout-result">
-          <h3>Workout Plan</h3>
-          <p>{suggestedWorkout.description}</p>
-          <h4>Workout Routine:</h4>
-          <ul>
+        <div className="workout-plan-result" ref={workoutResultRef}>
+          <h2 className="workout-plan-result-title">Your Suggested Workout Plan</h2>
+          <p className="workout-plan-description">{suggestedWorkout.description}</p>
+          <h3 className="workout-plan-subtitle">Workout Schedule:</h3>
+          <ul className="workout-plan-list">
             {suggestedWorkout.workout.map((day, index) => (
               <li key={index}>{day}</li>
             ))}
           </ul>
-          <h4>Diet Tips:</h4>
+          <h3 className="workout-plan-subtitle">Diet Tips:</h3>
           <p>{suggestedWorkout.dietTips}</p>
-          <h4>Lifestyle Tips:</h4>
+          <h3 className="workout-plan-subtitle">Lifestyle Tips:</h3>
           <p>{suggestedWorkout.lifestyleTips}</p>
         </div>
       )}

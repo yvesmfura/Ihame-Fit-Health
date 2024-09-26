@@ -1,125 +1,181 @@
-/* Workout.css */
-
-.workout-container {
+/* Container */
+.workout-plan-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
 }
 
-.workout-container:hover {
-  background-color: #e3e3e3;
-  transform: scale(1.02);
-}
-
-h2 {
+.workout-plan-container h2 {
   text-align: center;
-  color: #333;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
-  transition: color 0.3s ease-in-out;
-}
-
-h3 {
-  text-align: center;
   color: #333;
-  font-size: 1.8rem;
-  transition: color 0.3s ease-in-out;
+  letter-spacing: 1px;
 }
 
-h2:hover {
-  color: #007bff;
+/* Form */
+.workout-plan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.workout-label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
+.workout-plan-label {
+  font-weight: 600;
   color: #555;
 }
 
-.workout-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+select,
+button,
+input {
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: border 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
-.workout-select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+select:focus,
+input:focus {
   outline: none;
+  border: 1px solid #4a90e2;
+  background-color: #eef6ff;
+  box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
 }
 
-form button {
-  display: block;
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  color: white;
-  background-color: #007bff;
+/* Button Styling */
+.workout-plan-button {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: bold;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
 }
 
-form button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
+.workout-plan-button:hover {
+  background-color: #357ab7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-form button:active {
-  background-color: #004494;
+.workout-plan-button:active {
+  transform: translateY(0);
 }
 
-.result-container {
-  margin-top: 30px;
+/* Workout Plan Display */
+.workout-result {
+  margin-top: 40px;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+  background-color: #e7f4f9;
+  border: 2px solid #4a90e2;
+  border-radius: 15px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.result-container:hover {
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+.workout-result.visible {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
 }
 
-.result-container h3 {
-  color: #007bff;
-}
-
-.result-container p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
+.workout-result h3 {
+  font-size: 1.75rem;
+  color: #4a90e2;
   margin-bottom: 15px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.result-container ul {
-  list-style-type: square;
-  padding-left: 20px;
-  margin-bottom: 20px;
-}
-
-.result-container ul li {
-  margin-bottom: 10px;
+.workout-result p {
   font-size: 1rem;
   color: #333;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
-.result-container ul li::marker {
-  color: #007bff;
+.workout-result ul {
+  margin-top: 15px;
+  padding: 0;
 }
 
-/* Smooth scroll effect */
-html {
-  scroll-behavior: smooth;
+.workout-result ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.workout-result ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.workout-result ul li:before {
+  content: '✔';
+  color: #4a90e2;
+  margin-right: 10px;
+}
+
+/* Highlighting Effect */
+.highlighted-plan {
+  background-color: #f1f8ff;
+  border-left: 4px solid #4a90e2;
+  animation: highlight 0.8s ease-in-out;
+}
+
+@keyframes highlight {
+  from {
+    background-color: #fff0e0;
+  }
+  to {
+    background-color: #f1f8ff;
+  }
+}
+
+/* Diet & Lifestyle Tips */
+.workout-result .tips {
+  margin-top: 20px;
+}
+
+.workout-result .tips h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+
+.workout-result .tips p {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .workout-plan-container {
+    padding: 10px;
+  }
+
+  select,
+  button,
+  input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .workout-result {
+    padding: 15px;
+  }
 }
