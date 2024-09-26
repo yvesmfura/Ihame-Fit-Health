@@ -1,181 +1,189 @@
-/* Container */
-.workout-plan-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+/* Container Styling */
+.workout-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(135deg, #f9f9f9, #e3e6f0);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.workout-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styles */
+.workout-container h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  animation: slideInFromBottom 0.8s ease-out;
+}
+
+/* Form Styles */
+form div {
+  margin-bottom: 25px;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+label {
+  font-size: 17px;
+  color: #444;
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #d0d3d9;
+  border-radius: 8px;
+  transition: border-color 0.4s ease, background-color 0.4s ease;
   font-family: 'Poppins', sans-serif;
 }
 
-.workout-plan-container h2 {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: #333;
-  letter-spacing: 1px;
-}
-
-/* Form */
-.workout-plan-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.workout-plan-label {
-  font-weight: 600;
-  color: #555;
-}
-
-select,
-button,
-input {
-  padding: 12px 16px;
-  border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-  transition: border 0.3s, background-color 0.3s, box-shadow 0.3s;
-}
-
-select:focus,
-input:focus {
+select:focus {
+  border-color: #007bff;
+  background-color: #f0f4ff;
   outline: none;
-  border: 1px solid #4a90e2;
-  background-color: #eef6ff;
-  box-shadow: 0 0 10px rgba(74, 144, 226, 0.3);
 }
 
-/* Button Styling */
-.workout-plan-button {
-  background-color: #4a90e2;
+/* Submit Button Styles */
+button[type='submit'] {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
   color: #fff;
-  font-weight: bold;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   border: none;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  transition: background 0.4s ease, transform 0.2s ease;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeInUp 0.7s ease forwards;
 }
 
-.workout-plan-button:hover {
-  background-color: #357ab7;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+button[type='submit']:hover {
+  background: linear-gradient(135deg, #0056b3, #004094);
+  transform: translateY(-3px);
 }
 
-.workout-plan-button:active {
-  transform: translateY(0);
-}
-
-/* Workout Plan Display */
+/* Workout Result Styles */
 .workout-result {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #e7f4f9;
-  border: 2px solid #4a90e2;
-  border-radius: 15px;
-  opacity: 0;
-  transform: scale(0.95);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.workout-result.visible {
-  opacity: 1;
-  transform: scale(1);
-  box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
+  margin-top: 35px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 1s ease forwards;
 }
 
 .workout-result h3 {
-  font-size: 1.75rem;
-  color: #4a90e2;
-  margin-bottom: 15px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 18px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .workout-result p {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 10px;
-  line-height: 1.5;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
 }
 
 .workout-result ul {
+  padding-left: 25px;
   margin-top: 15px;
-  padding: 0;
+  list-style-type: disc;
 }
 
-.workout-result ul li {
-  list-style: none;
-  margin-bottom: 10px;
-  padding: 12px;
-  background-color: #fff;
+.workout-result li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Go Back Button */
+button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease;
+  animation: fadeInUp 1s ease forwards;
 }
 
-.workout-result ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+button:hover {
+  background: linear-gradient(135deg, #218838, #1c7a32);
+  transform: translateY(-3px);
 }
 
-.workout-result ul li:before {
-  content: '✔';
-  color: #4a90e2;
-  margin-right: 10px;
-}
-
-/* Highlighting Effect */
-.highlighted-plan {
-  background-color: #f1f8ff;
-  border-left: 4px solid #4a90e2;
-  animation: highlight 0.8s ease-in-out;
-}
-
-@keyframes highlight {
+/* Animations */
+@keyframes fadeIn {
   from {
-    background-color: #fff0e0;
+    opacity: 0;
+    transform: scale(0.9);
   }
   to {
-    background-color: #f1f8ff;
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-/* Diet & Lifestyle Tips */
-.workout-result .tips {
-  margin-top: 20px;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.workout-result .tips h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-  text-align: center;
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.workout-result .tips p {
-  font-size: 1rem;
-  color: #666;
-  text-align: justify;
-  line-height: 1.6;
-}
-
-/* Responsiveness */
+/* Responsive Styles */
 @media (max-width: 600px) {
-  .workout-plan-container {
-    padding: 10px;
+  .workout-container {
+    padding: 20px;
   }
 
-  select,
-  button,
-  input {
-    padding: 10px;
-    font-size: 0.9rem;
+  h2, h3 {
+    font-size: 22px;
   }
 
-  .workout-result {
-    padding: 15px;
+  p, li {
+    font-size: 15px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px;
   }
 }

@@ -192,35 +192,34 @@ const Workout: React.FC = () => {
         workout = [
           'Day 1: Upper Body Strength',
           'Day 2: Lower Body Strength',
-          'Day 3: Core & Abs Focus',
+          'Day 3: Core & Cardio Focus',
           'Day 4: Rest Day',
-          'Day 5: Cardio (HIIT or Running)',
-          'Day 6: Full-Body Circuit Training',
-          'Day 7: Rest or Yoga',
+          'Day 5: Full-Body HIIT',
+          'Day 6: Cardio (Running or Cycling)',
+          'Day 7: Rest or Active Recovery',
         ];
         break;
 
       case 'fitLeanApple':
-        description = 'You aim for a fit, lean look, focusing on toning your midsection.';
-        dietTips = 'Focus on lean proteins and vegetables to maintain a low body fat percentage.';
-        lifestyleTips = 'Incorporate full-body strength training with core-specific exercises.';
+        description = 'Slimmer upper body with a focus on maintaining lower body tone and keeping slim.';
+        dietTips = 'Consume adequate protein and carbs to support your workouts without excess fat gain.';
+        lifestyleTips = 'Focus on lower body workouts with cardio to maintain your desired shape.';
         workout = [
-          'Day 1: Upper Body & Core Strength Training',
-          'Day 2: Lower Body Workout',
-          'Day 3: Cardio (Running or Cycling)',
+          'Day 1: Lower Body Strength Training',
+          'Day 2: Upper Body Circuit',
+          'Day 3: Cardio (HIIT or Running)',
           'Day 4: Rest Day',
-          'Day 5: Core & Abs Circuit',
-          'Day 6: HIIT Cardio',
-          'Day 7: Rest or Light Yoga',
+          'Day 5: Full-Body Strength Workout',
+          'Day 6: Core & Abs Focus',
+          'Day 7: Rest or Light Activity',
         ];
         break;
 
       default:
-        description = 'No workout plan available for this body preference.';
-        dietTips = '';
-        lifestyleTips = '';
+        description = 'Please select your preferences to get a workout plan.';
+        dietTips = 'General healthy diet tips: focus on lean proteins, healthy fats, and complex carbs.';
+        lifestyleTips = 'Maintain a balanced lifestyle with regular exercise and mindful eating habits.';
         workout = [];
-        break;
     }
 
     return { workout, description, dietTips, lifestyleTips };
@@ -229,82 +228,106 @@ const Workout: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const { bodyPreference } = userInput;
-    const result = generateWorkoutPlan(bodyPreference);
-    setSuggestedWorkout(result);
+    const workoutData = generateWorkoutPlan(bodyPreference);
+    setSuggestedWorkout(workoutData);
+    if (workoutResultRef.current) {
+      workoutResultRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (workoutTitleRef.current) {
+      workoutTitleRef.current.focus();
+    }
+  };
 
-    // Scroll to the title of the workout plan
-    workoutTitleRef.current?.scrollIntoView({ behavior: 'smooth' });
+  const resetForm = () => {
+    setUserInput({ sex: '', bodyType: '', bodyPreference: '' });
+    setSuggestedWorkout(null);
+  };
+
+  const handleGoBack = () => {
+    resetForm();
+    if (workoutResultRef.current) {
+      workoutResultRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
-    <div className="workout-plan-container">
-      <form className="workout-plan-form" onSubmit={handleSubmit}>
-        <label className="workout-plan-label">
-          Sex:
-          <select name="sex" value={userInput.sex} onChange={handleInputChange} required>
-            <option value="">Select your sex</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-          </select>
-        </label>
-        <label className="workout-plan-label">
-          Body Type:
-          <select name="bodyType" value={userInput.bodyType} onChange={handleInputChange} required>
-            <option value="">Select your body type</option>
-            {userInput.sex === 'male'
-              ? maleBodyTypes.map(bodyType => (
-                  <option key={bodyType.value} value={bodyType.value}>
-                    {bodyType.label}
-                  </option>
-                ))
-              : femaleBodyTypes.map(bodyType => (
-                  <option key={bodyType.value} value={bodyType.value}>
-                    {bodyType.label}
-                  </option>
-                ))}
-          </select>
-        </label>
-        <label className="workout-plan-label">
-          Body Preference:
-          <select
-            name="bodyPreference"
-            value={userInput.bodyPreference}
-            onChange={handleInputChange}
-            required
-          >
-            <option value="">Select your body preference</option>
-            {userInput.sex === 'male'
-              ? maleBodyPreferences.map(preference => (
-                  <option key={preference.value} value={preference.value}>
-                    {preference.label}
-                  </option>
-                ))
-              : femaleBodyPreferences.map(preference => (
-                  <option key={preference.value} value={preference.value}>
-                    {preference.label}
-                  </option>
-                ))}
-          </select>
-        </label>
-        <button type="submit" className="workout-plan-button">
-          Generate Workout Plan
-        </button>
-      </form>
+    <div className="workout-container">
+      <h2>Customized Workout Plan</h2>
+      {!suggestedWorkout ? (
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label>Sex:</label>
+            <select name="sex" value={userInput.sex} onChange={handleInputChange} required>
+              <option value="">Select...</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
 
-      {suggestedWorkout && (
-        <div className="workout-plan-result" ref={workoutResultRef}>
-          <h2 className="workout-plan-result-title">Your Suggested Workout Plan</h2>
-          <p className="workout-plan-description">{suggestedWorkout.description}</p>
-          <h3 className="workout-plan-subtitle">Workout Schedule:</h3>
-          <ul className="workout-plan-list">
+          <div>
+            <label>Body Type:</label>
+            <select
+              name="bodyType"
+              value={userInput.bodyType}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="">Select...</option>
+              {userInput.sex === 'male'
+                ? maleBodyTypes.map(type => (
+                    <option key={type.value} value={type.value}>
+                      {type.label}
+                    </option>
+                  ))
+                : femaleBodyTypes.map(type => (
+                    <option key={type.value} value={type.value}>
+                      {type.label}
+                    </option>
+                  ))}
+            </select>
+          </div>
+
+          <div>
+            <label>Body Preference:</label>
+            <select
+              name="bodyPreference"
+              value={userInput.bodyPreference}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="">Select...</option>
+              {userInput.sex === 'male'
+                ? maleBodyPreferences.map(pref => (
+                    <option key={pref.value} value={pref.value}>
+                      {pref.label}
+                    </option>
+                  ))
+                : femaleBodyPreferences.map(pref => (
+                    <option key={pref.value} value={pref.value}>
+                      {pref.label}
+                    </option>
+                  ))}
+            </select>
+          </div>
+
+          <button type="submit">Generate Workout Plan</button>
+        </form>
+      ) : (
+        <div ref={workoutResultRef} className="workout-result">
+          <h2 tabIndex={-1} ref={workoutTitleRef}>Your Workout Plan</h2>
+          <p>{suggestedWorkout.description}</p>
+          <h3>Workout Schedule:</h3>
+          <ul>
             {suggestedWorkout.workout.map((day, index) => (
               <li key={index}>{day}</li>
             ))}
           </ul>
-          <h3 className="workout-plan-subtitle">Diet Tips:</h3>
+          <h3>Diet Tips:</h3>
           <p>{suggestedWorkout.dietTips}</p>
-          <h3 className="workout-plan-subtitle">Lifestyle Tips:</h3>
+          <h3>Lifestyle Tips:</h3>
           <p>{suggestedWorkout.lifestyleTips}</p>
+
+          <button onClick={handleGoBack}>Go Back</button>
         </div>
       )}
     </div>
